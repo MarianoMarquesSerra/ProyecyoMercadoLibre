@@ -1,0 +1,35 @@
+.slider-container{
+    margin: 0 auto;
+
+}
+.slider{
+    display: flex;
+    cursor: grab;
+}
+.item{
+    height: 15rem;
+    max-width: 30rem;
+    padding: 0.5rem;
+}
+
+.imgIcono{
+    width: 50px;
+}
+
+.imgFoto{
+    width: 100px;
+}
+
+.tamañoSlideIcono{
+    width: 150px;
+    height: 160px;
+}
+
+.tamañoSlideFoto{
+    width: 150px;
+    height: 230px;
+}
+
+.tam{
+    height: 500px;
+}

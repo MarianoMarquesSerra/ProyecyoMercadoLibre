@@ -1,38 +1,623 @@
-.App {
+.Buscador{
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.BotonRedondo{
+  background-color: white;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
   text-align: center;
+  box-shadow: 1px 2px gray;
 }
 
-.App-logo {
-  height: 40vmin;
+.TituloBoton{
+  position: relative;
+  margin-top: 18px;
+  font-size: 9px;
+}
+
+.contenedorBoton{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 67px;
+  height: 65px;
+  float: left;
+}
+
+.contenedorBotones{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.fuenteTextos{
+  font-size: 10px;
+}
+
+.Icono{
+  position: relative;
+  margin-top: 12px;
+  width: 30px;
+  height: 30px;
+}
+
+.ItemCategoria{
+  display: flex;
+  position: relative;
+  float: left;
+}
+
+.ItemFlecha{
+  display: flex;
+  position: relative;
+  float: none;
+}
+
+.ContenedorCategoria .ItemFlecha{
+  display: flex;
+  justify-content:end;
+}
+
+.fondo{
+  background-color: rgba(192, 192, 192, 0.281);
+}
+
+.BotonRedondo:hover {
+  cursor: pointer;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.ContenedorOferta{
+  position: relative;
+  display: flex;
+  margin:auto;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.ImgOferta{
+  border-radius: 10px;
+}
+
+.ImgSuper{
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+}
+
+.ImgOfertadeldia{
+  width: 350px;
+  padding: 10px;
+}
+
+
+.ColorGradiente{
+  background: linear-gradient(45deg,rgb(170, 36, 170),rgb(14, 14, 48));
+}
+
+.fuenteBarra{
+  margin-top: 0;
+  font-family:'Times New Roman', Times, serif;
+  color: white;
+  font-size: 40px;
+}
+
+.Menu{
+  position: absolute;
+  width: 400px;
+  margin-top: 55px;
+  z-index: 10;
+}
+
+ul{
+  margin-top: 40px;
+  list-style:none;
+}
+
+.estiloSubNivel{
+  position: relative;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(50deg,rgb(172, 29, 72),rgb(9, 9, 31));
+  width: 190px;
+  padding: 5px;
+  margin:10px;
+  font-size: 9px;
+  border-radius: 10px 50px 50px 50px;
+}
+
+.colorMenu{
+  background-color: rgba(255, 230, 0, 0.966) !important;
+}
+
+.estiloMercadoPago{
+  position: relative;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  background-color: rgb(255, 252, 52);
+  width: 95%;
+  padding: 10px;
+  margin:10px;
+  font-size: 12px;
+  border-radius: 50px 50px;
+}
+
+.CarrouselPosicion{
+  position: relative;
+  margin-top: 10px;
+}
+
+li{
+  padding: 10px;
+}
+
+.contenedorMenu{
+  position: absolute;
+  width: 100%;
+  height: 1650px;
+  background-color: rgba(0, 0, 0, 0.671);
+  z-index: 10;
+}
+
+.imgBeneficios{
+  border-radius: 10 10 10 10;
+}
+
+#cabecera{
+  z-index: 10;
+  margin-bottom: 60px;
+}
+
+.MarginTop{
+  margin-top: 40px;
+}
+
+.fijar{
+  position: fixed;
+  z-index: 0;
+}
+
+.pointerEvent{
   pointer-events: none;
+  height: 80px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.pointerEventSlider{
+  pointer-events: none;
+  height: 160px;
+  margin: 10px;
+}
+
+.bordeInferior{
+  border-bottom-color: blue;
+  border-bottom-width: 5px;
+}
+
+.imgSlider{
+  width: 100px;
+}
+
+.cantCarrito{
+  display:block;
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-color: red;
+  font-size: 8px;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  margin-left: 72.5%;
+}
+
+#ImgVisto{
+  width: 150px !important;
+  height: 150px !important;
+  padding: 10px;
+}
+
+.MenuDesplegable{
+  position: relative;
+  display: flex;
+  margin: auto;
+  width: 80%;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 8px;
+}
+
+.contenedorOpciones{
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.671);
+  z-index: 10;
+  display: none;
+}
+
+.OpcionesMenuDesp{
+  position: relative;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: auto;
+  display: none;
+  width: 100%;
+  background-color: white;
+  animation: crecer-menu 0.5s linear forwards;
+}
+
+.borde-redondo{
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+}
+
+.centrado{
+  display: flex;
+  position: relative;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+
+@keyframes crecer-menu {
+  0%
+  {
+    top: 100%;
+  }
+  50%
+  {
+    top: 80%;
+  }
+  100%
+  {
+    top: 50%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.visible{
+  display: block;
+}
+
+.ImgVisto{
+  width: 150px !important;
+  height: 150px !important;
+  padding: 10px;
+}
+
+.linea{
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 50px;
+  height: 10px;
+  border-radius: 30%;
+  font-weight: 400;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 46%;
+  border-width: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+.contenedorBuscar{
+  display: block;
+  width: 480px;
+  height: 400px;
+  border: 1px solid grey;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
+.iconArrow{
+  position: relative;
+  display: flex;
+  color: blue;
+  margin-left: auto;
+}
+
+
+.iconArrowRotarArriba{
+    animation: animar-rotar-arriba 0.5s linear forwards;
+}
+
+.iconArrowRotarAbajo{
+  animation: animar-rotar-abajo 0.5s linear forwards;
+}
+
+@keyframes animar-rotar-arriba {
+
+  100%
+  {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes animar-rotar-abajo {
+  0%
+  {
+    transform: rotate(180deg);
+  }
+  50%
+  {
+    transform: rotate(90deg);
+  }
+  100%
+  {
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.contenedorSwitch{
+  display: flex;
+  position: absolute;
+  background-color: grey;
+  width: 40px;
+  height: 23px;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-left: 48px;
+}
+
+.Switch{
+  display: flex;
+  position: relative;
+  width: 20px;
+  background-color: rgb(248, 248, 248);
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+
+.backgroundBlue{
+  background-color: blue;
+}
+
+.moverSwitchDerecha{
+  animation: animar-mover-switch-derecha 0.15s linear forwards;
+}
+
+.moverSwitchIzquierda{
+  animation: animar-mover-switch-izquierda 0.15s linear forwards;
+}
+
+.BotonBuscar{
+  display: block;
+  position: relative;
+  color: white;
+  width: 80%;
+  height: 40px;
+  background-color: blue;
+  border: none;
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 5px;
+}
+
+.contenedorNoticias{
+  display: flex;
+  position: relative;
+  margin: auto;
+}
+
+
+@keyframes animar-mover-switch-derecha{
+  100%
+  {
+    display: flex;
+    position: relative;
+    margin-left: 20px;
+    border: 1px solid blue;
+  }
+}
+
+@keyframes animar-mover-switch-izquierda{
+  100%
+  {
+    display: flex;
+    position: relative;
+    margin-left: 0px;
+    border: 1px solid grey;
+  }
+}
+
+.fuenteXS{
+  font-size: 10px;
+}
+
+.imgVehiculo{
+  width: 140px;
+  height: 50px;
+}
+
+.contenedorVehiculos{
+  display: flex;
+  position: relative;
+  margin: auto;
+  width: 160px;
+  padding: 20px;
+}
+
+.contenedorBeneficios{
+  display: flex;
+  position: relative;
+}
+
+.contImgVehiculo{
+  display: flex;
+  position: relative;
+  margin: auto;
+}
+
+.tamañoSlide{
+  width: 40px;
+  height: 40px;
+}
+
+.tamañoSlideFoto{
+  height: 220px;
+}
+
+.item {
+  height: 4rem;
+}
+
+.itemSlider {
+  height: 8rem;
+}
+
+.slider-container{
+  width: 850px;
+  height: 180px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 620px){
+  .contenedorBoton{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 92px;
+    height: 80px;
+    float: left;
+  }
+  .BotonRedondo{
+      width: 79px;
+      height: 70px;
+  }
+  .TituloBoton{
+    position: relative;
+    margin-top: 18px;
+    font-size: 12px;
+  }
+  .Icono{
+    position: relative;
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+  }
+  .cantCarrito{
+    margin-left: 75%;
+  }
+  .iconArrow{
+    margin-left: 250px;
+  }
+}
+
+@media screen and (min-width: 750px){
+  .contenedorBoton{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 112px;
+    height: 100px;
+    float: left;
+  }
+  .BotonRedondo{
+      width: 99px;
+      height: 99px;
+  }
+  .TituloBoton{
+    position: relative;
+    margin-top: 25px;
+    font-size: 18px;
+  }
+  .Icono{
+    position: relative;
+    margin-top: 20px;
+    width: 55px;
+    height: 55px;
+  }
+  .cantCarrito{
+    margin-left: 77%;
+  }
+  .iconArrow{
+    margin-left: 300px;
+  }
+  .CarrouselPosicion{
+    position: relative;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 930px){
+  .contenedorBoton{
+    position: relative;
+    display: flex;
+    
+    align-items: center;
+    width: 132px;
+    height: 120px;
+    float: left;
+  }
+  .BotonRedondo{
+      width: 89px;
+      height: 89px;
+  }
+  .TituloBoton{
+    position: relative;
+    margin-top: 15px;
+    font-size: 22px;
+  }
+  .Icono{
+    position: relative;
+    margin-top: 18px;
+    margin-left: 1px;
+    width: 55px;
+    height: 55px;
+  }
+  .tamañoBody{
+    height: 174px;
+  }
+  
+  .ImgVisto{
+    width: 250px !important;
+    height: 250px !important;
+    padding: 10px;
+  }
+  .ImgSuper{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+  }
+  .cantCarrito{
+    margin-left: 79.5%;
+  }
+  .iconArrow{
+    margin-left: 650px;
+  }
+
+  .contSlide{
+    display: grid;
+    position: relative;
+    justify-content: center;
+  }
+  .fuenteTextos{
+    font-size: 14px;
+    font-family:sans-serif;
+  }
+  .contenedorBeneficios{
+    display: flex;
+    position: relative;
+    margin-left: 17px;
+  }
+
+  .CarrouselPosicion{
+    position: relative;
+    margin-top: 60px;
   }
 }
