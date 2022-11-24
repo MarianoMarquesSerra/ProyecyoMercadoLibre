@@ -2,7 +2,7 @@
 const ListProductos = [
     {
         id:1,
-        img:"https://http2.mlstatic.com/D_NQ_NP_753096-MLA43439071771_092020-O.webp",
+        img:"https://http2.mlstatic.com/D_NQ_NP_625238-MLA48808639638_012022-W.webp",
         desc:"Guitarra Fender Am Standard Stratocaster Hss Limited Edition",
         precio:650000,
         cuotas:"6x 108.333 sin interés"

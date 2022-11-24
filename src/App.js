@@ -22,6 +22,7 @@ import RESUMEN from "./paginas/menu/Resumen.js";
 import VENDER from "./paginas/menu/Vender.js";
 import MERCADOSHOPS from "./paginas/menu/Mercadoshops.js";
 import ACERCADE from "./paginas/menu/Acercade.js";
+import VistaProducto from './paginas/VistaProducto';
 
 const App = () => {
   return (
@@ -50,6 +51,7 @@ const App = () => {
         <Route path="/vender" element={<VENDER/>}/>
         <Route path="/mercadoshops" element={<MERCADOSHOPS/>}/>
         <Route path="/acercademercadolibre" element={<ACERCADE/>}/>
+        <Route path="/vistaproducto" element={<VistaProducto/>}/>
         <Route path="/" element={<HOME/>}/> 
       </Routes>
     </BrowserRouter>

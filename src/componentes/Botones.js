@@ -11,7 +11,7 @@ import { NavLink } from "react-router-dom";
 const Botones = () => {
     return (      
 
-        <div class="row col-12 p-4 mx-auto fondo">
+        <div class="row col-12 d-block d-md-none p-4 mx-auto fondo">
             <div class="contenedorBotones">
                 <nav>
                 <div class="contenedorBoton">

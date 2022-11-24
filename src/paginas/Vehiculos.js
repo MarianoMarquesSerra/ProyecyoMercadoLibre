@@ -8,7 +8,8 @@ import Slider from "../componentes/Slider.jsx";
 import {LogosAutos,IconosAutos} from "../apis/ListLogos.js";
 import ServiciosComplementarios from "../componentes/ServiciosComplementarios.js";
 import NoticiasAutosCamionetas from "../componentes/NoticiasAutosCamionetas.jsx";
-import CategoriasAutos from "../componentes/CategoriasAutos.js"; 
+import CategoriasAutos from "../componentes/CategoriasAutos.js";
+import ListVehiculos from "../apis/ListVehiculos.js";
 
 const Vehiculos = () => {
     
@@ -58,16 +59,8 @@ const Vehiculos = () => {
                         </div>
                         <div class="col-12 contSlide">
                           <div class="row"> 
-                            <Slider img1={require('../images/Vehiculo4.jpg')} 
-                                  img2={require('../images/Vehiculo5.jpg')} 
-                                  img3={require('../images/Vehiculo6.jpg')} 
-                                  img4={require('../images/Vehiculo7.jpg')} 
-                                  img5={require('../images/Vehiculo8.jpg')}
-                                  txt1="$15.500.000 Volkswagen Amarok 3.0 v6 Extreme"
-                                  txt2="$4.400.000 Peugeot 208 1.6 Feline"
-                                  txt3="$8.200.000 Toyota Corolla Cross 2.0 Xei Cvt"
-                                  txt4="$10.000.000 Toyota Sw4 2.8 Srx 177cv 4x4 7as At"
-                                  txt5="$12.900.000 Volkswagen Amarok 3.0 v6 Cd Higline"
+                            <Slider 
+                                  productos={ListVehiculos}
                                   typeImg={true}
                                   topDerecho={-370}/> 
                           </div>
@@ -99,7 +92,7 @@ const Vehiculos = () => {
                         </div>
                         <div class="row col-12 d-flex m-auto fondo">
                           <h6>Autos, Motos y Otros</h6>
-                          <CategoriasAutos/>
+                          <CategoriasAutos arreglo={["Autos Chocados y Averiados","Autos de Colección","Autos y Camionetas","Camiones","Colectivos","Maquinaria Agrícola","Maquinaria Vial","Motorhomes","Motos","Náutica","Planes de Ahorro","Semirremolques","Otros Vehículos"]}/>
                         </div>
                       </>
                    );

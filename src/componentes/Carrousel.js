@@ -6,9 +6,8 @@ const Carrousel = (props) => {
    const img2=props.img2;
    const img3=props.img3;
     return ( 
-
-        <div className="row col-12 m-auto">
-          <Carousel className='CarrouselPosicion'>
+        <div className="row col-12 mx-auto">
+          <Carousel className='container-fluid CarrouselPosicion'>
              <Carousel.Item interval={4000}>
                 <img className="d-block w-100 rounded" src={img1} alt="First slide"/>
              </Carousel.Item>

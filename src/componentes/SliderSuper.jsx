@@ -7,20 +7,20 @@ const SliderSuper = ({productos,Topedesplazamiento}) => {
     return ( 
         <motion.div className="slider-container p-2">
             <motion.div className="slider" drag='x' dragConstraints={{right: 0, left: Topedesplazamiento}}>
-                    {productos.map((producto)=>{
-                        return (
-                            <motion.div className="itemSlider text-center">
-                            <div class="card pointerEvent borde-redondo">
-                            <div class="card-body">
-                                <div class="text-center centrado">
-                                    <img src={producto.img} class="imgSlider p-2 centrado"/>
-                                </div>
-                            </div>    
+                {productos.map((producto) => {
+                    return (
+                        <motion.div className="itemSlider p-2 text-center">
+                        <div class="card pointerEvent borde-redondo">
+                        <div class="card-body d-flex align-items-center justify-content-center">
+                            <div class="text-center">
+                                <img src={producto.img} class="imgSlider"/>
                             </div>
-                            <a href="#" class="btn">{producto.txt}</a>
-                            </motion.div>
-                    )
-                    })}
+                        </div>    
+                        </div>
+                        <a href="#" class="btn">{producto.txt}</a>
+                        </motion.div>
+                )
+                })}
                 
             </motion.div>
 

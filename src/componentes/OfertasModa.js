@@ -4,7 +4,7 @@ const OfertasModa = ({img1,img2,img3,titulo}) => {
             <div className="text-center mt-4">
                 <h5>{titulo}</h5>
             </div>
-            <div className="container-fluid">
+            <div className="container-fluid col-11">
                 <div className='row'>
                     <div className="col-4">
                         <img className='img-fluid rounded' src={img1} alt="Imagen Primera Compra"/>

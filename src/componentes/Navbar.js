@@ -1,5 +1,5 @@
 import '../App.css';
-import { BiCartAlt, BiUser, BiChevronRight, BiSearchAlt2 } from "react-icons/bi";
+import { BiCartAlt, BiUser, BiChevronRight, BiUserCircle, BiSearchAlt2 } from "react-icons/bi";
 import React, {useState} from 'react';
 import 'bootstrap/dist/js/bootstrap.js';
 import {MdHouse, MdSearch, MdNotificationsNone, MdOutlineLocalMall, 
@@ -11,13 +11,35 @@ import {IoLockClosedOutline, IoShirtOutline, IoStarOutline,
   IoPricetagOutline} from "react-icons/io5";
 import MercadoPago from "../images/Mercado.jpg";
 import { NavLink } from "react-router-dom";
+import { AiOutlineDown } from "react-icons/ai";
+import { FaRegBell } from "react-icons/fa";
+import MenuTecnología from './MenuTecnología';
+
 
 
 const Navbar = () => {
   const [valor, setCont] = useState(false);
+  
+  
+    function mostrarMenu(valor,menu){
+    var menuCategorias = document.getElementById(menu);
+    var trianguloMenu = document.getElementById("trianguloMenu");
+    if(valor){
+      menuCategorias.style.display = 'block';
+      trianguloMenu.style.display = 'block';
+      console.log('Mouse Hover');
+    }else{
+      menuCategorias.style.display = 'none';
+      trianguloMenu.style.display = 'none';
+      console.log('Mouse Leave');
+    }
+  }
+  
+
+
   function agregarClase(valor) {
     var element = document.getElementById("cuerpo");
-    console.log(valor);
+
     if(valor){
       element.classList.add("fijar");
       setCont(true);
@@ -32,6 +54,102 @@ const Navbar = () => {
 
     return ( 
         <>
+          <div class="d-none d-md-block">
+            <div class="container-fluid colorMenu">                
+                  <div class="row">
+                      <div class="col-2 d-flex justify-content-center">
+                        <a><img src={require('../images/LogoMercadoLibre.jpg')}/></a>
+                      </div>
+                      <div class="col-6">
+                        <div class="BarraBusqueda m-2">
+                          <div class="row">
+                            <div class="col-11">
+                              <input class="form-control mx-2" type="search" placeholder="Buscar productos, marcas y más..." aria-label="Search"/>
+                            </div>
+                            <div class="col-1 d-flex align-items-center BarraBusqueda">
+                              <a><img class="ml-4" src={require('../images/Lupa.jpg')}/></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <a><img src={require('../images/LogoDisneyMenu.jpg')}/></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-2 d-flex justify-content-center">
+                      <a><img src={require('../images/Enviar_a.jpg')}/></a>
+                    </div>
+                    <div class="col-6">                 
+                      <ul id="MenuHorizontal">
+                        <li onMouseOver={() => {mostrarMenu(true,"menuCategorias")}} style={{width:'100px'}}><a class="itemCategoria" id="itemCategoria" style={{ textDecoration: 'none', color:"gray"}}>Categorías</a><AiOutlineDown/></li>
+                        <NavLink style={{ textDecoration: 'none', color:"gray" }} to="/ofertas">
+                          <li>Ofertas</li>
+                        </NavLink>
+                        <NavLink style={{ textDecoration: 'none', color:"gray" }} to="/super">
+                          <li>Supermercado</li>
+                        </NavLink>
+                        <NavLink style={{ textDecoration: 'none', color:"gray" }} to="/vehiculos">
+                          <li>Vehículos</li>
+                        </NavLink>
+                        <NavLink style={{ textDecoration: 'none', color:"gray" }} to="/moda">
+                          <li>Moda</li>
+                        </NavLink>
+                        <NavLink style={{ textDecoration: 'none', color:"gray" }} to="/vender">
+                          <li>Vender</li>
+                        </NavLink>
+                        <NavLink style={{ textDecoration: 'none', color:"gray" }} to="/ayuda">
+                          <li>Ayuda</li>
+                        </NavLink>
+                      </ul>                    
+                    </div>
+                    <div class="col-4">
+                      <ul id="MenuHorizontal" style={{color:'black'}}>
+                        <li style={{width:'120px'}}><BiUserCircle style={{fontSize:'24px', color:'grey'}}/> Mariano <AiOutlineDown style={{color:'grey'}}/></li>
+                        <li>Mis compras</li>
+                        <li>Favoritos <AiOutlineDown style={{color:'grey'}}/></li>
+                        <li><FaRegBell/></li>
+                        <li><BiCartAlt/></li>
+                      </ul>    
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="trianguloMenu" id="trianguloMenu"></div>
+          <div class="contendorMenuCategorias" id="menuCategorias">
+            
+            <div class="menuCategorias" onMouseOver={() => {mostrarMenu(true,"menuCategorias")}} onMouseLeave={() => {mostrarMenu(false,"menuCategorias")}}>            
+                <ul>
+                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Vehículos</a></li>
+                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Inmuebles</a></li>
+                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Supermercados</a></li>
+                  <li onMouseOver={() => {mostrarMenu(true,"menuTecnología")}} onMouseLeave={() => {mostrarMenu(false,"menuTecnología")}}><a href="" style={{textDecoration: 'none', color: 'white'}}><div class="ContenedorFloat">Tecnología</div><div class="ItemFlecha"><BiChevronRight/></div></a></li>
+                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Hogar y Muebles</a></li>
+                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Elesctrodomésticos</a></li>
+                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Herramientas</a></li>
+                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Construcción</a></li>
+                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Deportes y Fitness</a></li>
+                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Accesorios para Vehículos</a></li>
+                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Moda</a></li>
+                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Juegos y Juguetes</a></li>
+                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Bebés</a></li>
+                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Belleza y Cuidado Personal</a></li>
+                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Salud y Equipamiento Médico</a></li>
+                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Industrias y Oficinas</a></li>
+                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Agro</a></li>
+                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Productos Sustentables</a></li>
+                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Servicios</a></li>
+                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Más Vendidos</a></li>
+                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Tiendas Oficiales</a></li>
+                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Ver más categorías</a></li>
+                </ul>
+            </div>
+            <div class="menuTecnología" id="menuTecnología" onMouseOver={() => {mostrarMenu(true,"menuTecnología");mostrarMenu(true,"menuCategorias");}} onMouseLeave={() => {mostrarMenu(false,"menuTecnología");mostrarMenu(false,"menuCategorias");}}>
+              <MenuTecnología/>
+            </div>
+          </div>
+
+          <div class="d-md-none d-sm-block">
             <div class="collapse" id="navbarToggleExternalContent">
             <div class="contenedorMenu">
               <div class="col-12 bg-white Menu">
@@ -138,6 +256,7 @@ const Navbar = () => {
                   </div>
               </div>
             </nav>
+          </div>
         </>
      );
 }

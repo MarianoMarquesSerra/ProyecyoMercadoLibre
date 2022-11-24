@@ -1,8 +1,83 @@
+/*Remueve el borde cuando se está haciendo foco sobre el input*/
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn-sky{
+  background-color: rgba(224, 238, 243, 0.822);
+}
+
+.bg-page{
+  background-color: rgb(241, 238, 238);
+}
+
 .Buscador{
   position: relative;
   display: flex;
   justify-content: left;
   align-items: center;
+}
+
+#MenuHorizontal{
+  display: flex;
+  float: left;
+  margin: 0;
+  padding: 0;
+  color: grey;
+  font-size: 13px;
+}
+
+.menuCategorias{
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 270px;
+  margin-left: 150px;
+  background-color: rgb(44, 49, 49);
+  border-radius: 5px;
+}
+
+.menuCategorias ul li:hover{
+  background-color: rgb(64, 119, 221);
+}
+
+.trianguloMenu{
+  display: none;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(44, 49, 49);
+  z-index: 10;
+  color:rgb(44, 49, 49);
+  top: 95px;
+  left: 305px;
+  transform: rotate(45deg);
+}
+
+.contendorMenuCategorias{
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.247);
+  width: 100%;
+  height: 3000px;
+  z-index: 10;
+}
+
+.menuTecnología{
+  display: none;
+  position: absolute;
+  z-index: 10;
+  width: 760px;
+  margin-left: 415px;
+  background-color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 13px;
+  line-height: 5px;
+  color: grey;
+  height: 1017px;
 }
 
 .BotonRedondo{
@@ -58,15 +133,52 @@
   display: flex;
   position: relative;
   float: none;
+  justify-content:end;
+  margin-right: 20px;
 }
 
-.ContenedorCategoria .ItemFlecha{
+.ContenedorFloat{
   display: flex;
-  justify-content:end;
+  float: left;
 }
+
+table, td{
+  border: 1px solid gray;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.tableStyle{
+  width: 700px;
+  border: 1px solid gray;
+  margin-top: 35px;
+}
+
+table, tr, th{
+  width: 400px;
+  border: none;
+  padding: 10px;
+}
+
+table, tr, td{
+  width: 400px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
 
 .fondo{
   background-color: rgba(192, 192, 192, 0.281);
+}
+
+.fondoStrong{
+  background-color: rgba(163, 159, 159, 0.39);
 }
 
 .BotonRedondo:hover {
@@ -115,13 +227,46 @@ a:hover {
 .Menu{
   position: absolute;
   width: 400px;
-  margin-top: 55px;
   z-index: 10;
 }
 
 ul{
   margin-top: 40px;
   list-style:none;
+}
+
+.liTypeStyle{
+  list-style-type:disc;
+  margin-left: 0;
+  padding-left: 15px;
+  font-size: 14px;
+}
+
+#ListHorizontal {
+  background-color: #f6e3cabe;
+  float: left;
+  margin-right: 10px;
+  padding: 4px;
+  width: 50px;
+}
+
+.greenBlock{
+  background-color: rgb(56, 150, 56) !important;
+  padding: 6px !important;
+}
+
+.grlghBlock{
+  background-color: rgba(214, 248, 214, 0.404) !important;
+}
+
+.atumBlock{
+  background-color: rgba(252, 209, 129, 0.226) !important;
+}
+
+.borderVH{
+  border-left: 1px solid rgba(128, 128, 128, 0.432);
+  border-right: 1px solid rgba(128, 128, 128, 0.432);
+  height: 80px;
 }
 
 .estiloSubNivel{
@@ -138,7 +283,17 @@ ul{
 }
 
 .colorMenu{
-  background-color: rgba(255, 230, 0, 0.966) !important;
+  background-color: rgba(255, 230, 0, 0.616) !important;
+}
+
+.BarraBusqueda{
+  background-color: white;
+  border-radius: 2px;
+}
+
+.form-control {
+  border: 0;
+  width: 90%;
 }
 
 .estiloMercadoPago{
@@ -209,6 +364,19 @@ li{
   width: 100px;
 }
 
+.ImageContainer{
+  width: 60%;
+  height: auto;
+  display: flex;
+  margin: auto;
+}
+
+.AlignEnd{
+  position: flex;
+  align-self: flex-end;
+  align-items: center;
+}
+
 .cantCarrito{
   display:block;
   position: absolute;
@@ -223,9 +391,8 @@ li{
 }
 
 #ImgVisto{
-  width: 150px !important;
-  height: 150px !important;
-  padding: 10px;
+  height: 100% !important;
+  width: auto !important;
 }
 
 .MenuDesplegable{
@@ -477,14 +644,49 @@ li{
 }
 
 .itemSlider {
-  height: 8rem;
+  height: 4rem;
 }
 
 .slider-container{
   width: 850px;
-  height: 180px;
+  height: 200px;
   margin-bottom: 60px;
 }
+
+.ImgSmall{
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.ImgMD{
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.ImgSmall:hover {
+  border: 2px solid rgb(48, 125, 241);
+}
+
+.ImgLarge{
+  width: auto;
+  height: auto;
+  max-width: 460px;
+  max-height: 460px;
+}
+
+.cardHeight{
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 @media screen and (min-width: 620px){
   .contenedorBoton{
@@ -552,6 +754,10 @@ li{
     position: relative;
     margin-top: 60px;
   }
+  #cabecera{
+    z-index: 10;
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 930px){
@@ -585,8 +791,8 @@ li{
   }
   
   .ImgVisto{
-    width: 250px !important;
-    height: 250px !important;
+    width: 50% !important;
+    height: 50% !important;
     padding: 10px;
   }
   .ImgSuper{
@@ -618,6 +824,6 @@ li{
 
   .CarrouselPosicion{
     position: relative;
-    margin-top: 60px;
+    margin-top: 0px;
   }
 }

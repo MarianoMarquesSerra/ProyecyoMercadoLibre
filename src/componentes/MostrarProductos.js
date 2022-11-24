@@ -1,27 +1,31 @@
 import React from 'react';
 import { BiChevronRight } from "react-icons/bi";
-import ListProductos from "../apis/ListProductos";
+import { NavLink } from "react-router-dom";
+import { useParams } from 'react-router-dom';
 
-const Inspiradoenloultimo = () => {
+
+const MostrarProductos = ({productosVisitados,titulo}) => {
     return ( 
         <div className='col-12  col-xl-12 d-inline-block px-4 py-2 fondo'>
             <div class="card mb-3" >
                 <div class="row col-12 g-0">
                   <div class="card-header">
-                      <h6 class="text-left">Inspirado en lo último que viste</h6>
+                      <h6 class="text-left">{titulo}</h6>
                   </div>
                   <div class="row col-12">
-                    {ListProductos.map((producto, i) => {
+                    {productosVisitados.map((producto, i) => {
                       return (
                       <div class="col-6 col-xl-3 border" key={i}>
-                      <img src={producto.img} class="ImgVisto"/>
-                      <div class="col-12">
+                        <div class="text-center ImageContainer">
+                          <NavLink to="/vistaproducto"><img class="img-fluid" src={producto.img}/></NavLink>
+                        </div>
+                        <div class="col-12 AlignEnd">
                           <div class="card-body">
                               <p class="card-text">{producto.desc}</p>
                               <p><b>$ {producto.precio}</b></p>
                               <p class="text-success">{producto.cuotas}</p>
                           </div>
-                      </div>
+                        </div>
                       </div>
                       )
                     })}
@@ -44,4 +48,4 @@ const Inspiradoenloultimo = () => {
      );
 }
  
-export default Inspiradoenloultimo;
+export default MostrarProductos;
