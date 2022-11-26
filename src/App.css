@@ -242,6 +242,30 @@ ul{
   font-size: 14px;
 }
 
+.ItemSelected{
+  color: rgb(61, 80, 248);
+  border-bottom: 3px solid rgb(61, 80, 248) !important;
+}
+
+.ImageMD{
+  width: auto;
+  height: auto;
+  max-width: 100px;
+  max-height: 300px;
+}
+
+.Ocultar{
+  display: none;
+}
+
+.Mostrar{
+  display: block;
+}
+
+.hoverLink:hover {
+  color: rgb(61, 80, 248);
+}
+
 #ListHorizontal {
   background-color: #f6e3cabe;
   float: left;

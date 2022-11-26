@@ -3,6 +3,7 @@ import { TbLetterI } from "react-icons/tb";
 import DescripcionProducto from "../componentes/DescripcionProducto";
 import HeaderProducto from "../componentes/HeaderProducto";
 import Navbar from "../componentes/Navbar";
+import ProductosSimilares from "../componentes/ProductosSimilares";
 
 
 const VistaProducto = () => {
@@ -39,6 +40,9 @@ const VistaProducto = () => {
                     </div>
                 </div>
                 <hr></hr>
+                <div class="mt-5">
+                    <ProductosSimilares/>
+                </div>
             </div>
             </div>
         </div>
