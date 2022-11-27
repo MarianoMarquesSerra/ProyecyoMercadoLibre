@@ -4,6 +4,7 @@ import DescripcionProducto from "../componentes/DescripcionProducto";
 import HeaderProducto from "../componentes/HeaderProducto";
 import Navbar from "../componentes/Navbar";
 import ProductosSimilares from "../componentes/ProductosSimilares";
+import TablaDescSimilares from "../componentes/TablaDescSimilares";
 
 
 const VistaProducto = () => {

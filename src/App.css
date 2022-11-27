@@ -159,6 +159,11 @@ table {
   margin-top: 35px;
 }
 
+.tableStyleSimil{
+  width: 1050px;
+  margin-top: 35px;
+}
+
 table, tr, th{
   width: 400px;
   border: none;

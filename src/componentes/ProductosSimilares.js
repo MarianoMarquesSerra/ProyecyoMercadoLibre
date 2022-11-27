@@ -1,9 +1,11 @@
-import React,{useEffect} from "react";
+import React,{useEffect, useState} from "react";
 import MostrarSimilares from "./MostrarSimilares";
 import ListProdSimilares from "../apis/ListProdSimilares";
 import ListProdVisitados from "../apis/ListProdVisitados";
+import TablaDescSimilares from "./TablaDescSimilares";
 
 const ProductosSimilares = () => {
+    var [ListProductos, setLisProductos] = useState([]);
 
     function toggleSwitch(selector){
         var similares = document.getElementById("ProdSimil");
@@ -19,6 +21,7 @@ const ProductosSimilares = () => {
                 }
                 similares.classList.add('ItemSelected');
                 contenedor1.classList.add('Mostrar');
+                setLisProductos(ListProdSimilares);
             }else if(selector=="VisitRec"){
                 if (similares.classList.contains('ItemSelected')){
                     similares.classList.remove('ItemSelected');
@@ -26,6 +29,7 @@ const ProductosSimilares = () => {
                 }
                 visitados.classList.add('ItemSelected');
                 contenedor2.classList.add('Mostrar');
+                setLisProductos(ListProdVisitados);
                 }
             
     }
@@ -59,6 +63,9 @@ const ProductosSimilares = () => {
                     <div class="Ocultar" id="MuetraProdVisit">
                         <MostrarSimilares productos={ListProdVisitados}/>
                     </div>
+                </div>
+                <div>
+                    <TablaDescSimilares productos={ListProductos}/>
                 </div>
             </div>
         </div>
