@@ -123,6 +123,38 @@
   height: 30px;
 }
 
+.floatLeft{
+  display: flex;
+  float: left;
+}
+
+.contBarra:focus,input:focus{
+  border: 2px solid rgb(0, 110, 255) !important;
+}
+
+#lupa{
+  display:block;
+  position: absolute;
+  z-index: 10;
+  border-end-end-radius: 5px;
+  border-top-right-radius: 5px;
+  left: 845px;
+}
+
+#inputB{
+  border: 1px solid gray;
+}
+
+.contBarra{
+  display: flex;
+  margin-top: 40px !important;
+}
+
+.contBarra,#inputBarra{
+  display: flex;
+  justify-content: start;
+}
+
 .ItemCategoria{
   display: flex;
   position: relative;
@@ -184,6 +216,10 @@ table, tr, td{
 
 .fondoStrong{
   background-color: rgba(163, 159, 159, 0.39);
+}
+
+.fondoSky{
+  background-color: rgba(163, 198, 212, 0.452);
 }
 
 .BotonRedondo:hover {
@@ -711,6 +747,8 @@ li{
 
 .cardHeight{
   height: 280px;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;

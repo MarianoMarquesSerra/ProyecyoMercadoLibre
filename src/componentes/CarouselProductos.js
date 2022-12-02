@@ -8,8 +8,8 @@ const CarouselProductos = () => {
              <Carousel.Item interval={4000}>
              <div class="container m-0">
                 <div class="row d-flex justify-content-between">
-                    <div class="card" style={{width:'14rem'}}>
-                      <div class="cardHeight">
+                    <div class="card p-0" style={{width:'14rem'}}>
+                      <div class="cardHeight border-bottom">
                         <img src={require('../images/EpiphoneLesPaul.jpg')} alt="Card image cap"/>
                       </div>
                       <div class="card-body">
@@ -18,8 +18,8 @@ const CarouselProductos = () => {
 
                       </div>
                     </div>
-                    <div class="card" style={{width:'14rem'}}>
-                      <div class="cardHeight">
+                    <div class="card p-0" style={{width:'14rem'}}>
+                      <div class="cardHeight border-bottom">
                         <img src={require('../images/TelecasterPartcaster.jpg')} alt="Card image cap"/>
                       </div>
                       <div class="card-body">
@@ -28,8 +28,8 @@ const CarouselProductos = () => {
   
                       </div>
                     </div>
-                    <div class="card" style={{width:'14rem'}}>
-                      <div class="cardHeight">
+                    <div class="card p-0" style={{width:'14rem'}}>
+                      <div class="cardHeight border-bottom">
                         <img src={require('../images/FenderStratoJapon.jpg')} alt="Card image cap"/>
                       </div>
                       <div class="card-body">
@@ -44,8 +44,8 @@ const CarouselProductos = () => {
              <Carousel.Item interval={4000}>
              <div class="container m-0">
                 <div class="row d-flex justify-content-between">
-                    <div class="card" style={{width:'14rem'}}>
-                      <div class="cardHeight">
+                    <div class="card p-0" style={{width:'14rem'}}>
+                      <div class="cardHeight border-bottom">
                         <img src={require('../images/FenderStratoSt67.jpg')} alt="Card image cap"/>
                       </div>
                       <div class="card-body">
@@ -54,8 +54,8 @@ const CarouselProductos = () => {
   
                       </div>
                     </div>
-                    <div class="card" style={{width:'14rem'}}>
-                      <div class="cardHeight">
+                    <div class="card p-0" style={{width:'14rem'}}>
+                      <div class="cardHeight border-bottom">
                         <img src={require('../images/YamahaErg121.jpg')} alt="Card image cap"/>
                       </div>
                       <div class="card-body">
@@ -64,8 +64,8 @@ const CarouselProductos = () => {
   
                       </div>
                     </div>
-                    <div class="card" style={{width:'14rem'}}>
-                      <div class="cardHeight">
+                    <div class="card p-0" style={{width:'14rem'}}>
+                      <div class="cardHeight border-bottom">
                         <img src={require('../images/TelecasterHondo.jpg')} alt="Card image cap"/>
                       </div>
                       <div class="card-body">
@@ -80,8 +80,8 @@ const CarouselProductos = () => {
              <Carousel.Item interval={4000}>
              <div class="container m-0">
                 <div class="row d-flex justify-content-between">
-                    <div class="card" style={{width:'14rem'}}>
-                      <div class="cardHeight">
+                    <div class="card p-0" style={{width:'14rem'}}>
+                      <div class="cardHeight border-bottom">
                         <img src={require('../images/SquierPartcaster.jpg')} alt="Card image cap"/>
                       </div>
                       <div class="card-body">
@@ -90,8 +90,8 @@ const CarouselProductos = () => {
   
                       </div>
                     </div>
-                    <div class="card" style={{width:'14rem'}}>
-                      <div class="cardHeight">
+                    <div class="card p-0" style={{width:'14rem'}}>
+                      <div class="cardHeight border-bottom">
                         <img src={require('../images/StratoTomAnderson.jpg')} alt="Card image cap"/>
                       </div>
                       <div class="card-body">
@@ -100,8 +100,8 @@ const CarouselProductos = () => {
   
                       </div>
                     </div>
-                    <div class="card" style={{width:'14rem'}}>
-                      <div class="cardHeight">
+                    <div class="card p-0" style={{width:'14rem'}}>
+                      <div class="cardHeight border-bottom">
                         <img src={require('../images/SquierAffinity.jpg')} alt="Card image cap"/>
                       </div>
                       <div class="card-body">

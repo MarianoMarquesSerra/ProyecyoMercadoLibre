@@ -3,13 +3,14 @@ import { TbLetterI } from "react-icons/tb";
 import DescripcionProducto from "../componentes/DescripcionProducto";
 import HeaderProducto from "../componentes/HeaderProducto";
 import Navbar from "../componentes/Navbar";
+import PreguntasyRespuestas from "../componentes/PreguntasyRespuestas";
 import ProductosSimilares from "../componentes/ProductosSimilares";
 import TablaDescSimilares from "../componentes/TablaDescSimilares";
 
 
 const VistaProducto = () => {
     return ( 
-        <div>
+        <div className="bg-page">
             <div id="cabecera">
                 <Navbar/>
             </div>
@@ -41,10 +42,22 @@ const VistaProducto = () => {
                     </div>
                 </div>
                 <hr></hr>
-                <div class="mt-5">
+                <div class="mt-5 mb-5">
                     <ProductosSimilares/>
                 </div>
+                <hr></hr>
+                <div class="mt-5 mb-5">
+                    <PreguntasyRespuestas/>
+                </div>
+                <hr></hr>
+                &nbsp;&nbsp;
             </div>
+            </div>
+            <div className="container mt-4">
+                <h4>También te puede interesar</h4>
+            </div>
+            <div className="container mt-4">
+
             </div>
         </div>
      );

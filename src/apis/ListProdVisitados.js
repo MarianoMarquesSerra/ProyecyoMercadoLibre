@@ -11,7 +11,8 @@ const ListProdVisitados = [
         diapason:"Arce",
         acabado:"Laca nitrocelulosa",
         moddet:"0110202850",
-        origen:"USA"
+        origen:"USA",
+        cantidad:0
     },
     {
         id:2,
@@ -25,7 +26,8 @@ const ListProdVisitados = [
         diapason:"Arce",
         acabado:"Brillante",
         moddet:"0144502506",
-        origen:"-"
+        origen:"-",
+        cantidad:1
     },
     {
         id:3,
@@ -39,7 +41,8 @@ const ListProdVisitados = [
         diapason:"Palo de rosa",
         acabado:"Laca",
         moddet:"-",
-        origen:"-"
+        origen:"-",
+        cantidad:38
     }
 ]
 

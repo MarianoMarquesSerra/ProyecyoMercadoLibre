@@ -11,7 +11,8 @@ const ListProdSimilares = [
         diapason:"Arce",
         acabado:"Uretano brillante",
         moddet:"-",
-        origen:"Mexico"
+        origen:"Mexico",
+        cantidad:1
     },
     {
         id:2,
@@ -25,7 +26,8 @@ const ListProdSimilares = [
         diapason:"Palo de rosa",
         acabado:"Brillante",
         moddet:"LPST00KHCH1",
-        origen:"-"
+        origen:"-",
+        cantidad:2
     },
     {
         id:3,
@@ -39,7 +41,8 @@ const ListProdSimilares = [
         diapason:"Palo de rosa",
         acabado:"Brillante",
         moddet:"-",
-        origen:"Mexico"
+        origen:"Mexico",
+        cantidad:0
     }
 ]
 
