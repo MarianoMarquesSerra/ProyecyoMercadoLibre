@@ -7,6 +7,7 @@ import Navbar from "../componentes/Navbar";
 import PreguntasyRespuestas from "../componentes/PreguntasyRespuestas";
 import ProductosSimilares from "../componentes/ProductosSimilares";
 import ListProddeInteres from "../apis/ListProddeInteres";
+import FooterProductos from "../componentes/FooterProductos";
 
 
 const VistaProducto = () => {
@@ -57,8 +58,14 @@ const VistaProducto = () => {
             <div className="container mt-4">
                 <h4>También te puede interesar</h4>
             </div>
-            <div className="container mt-4">
+            <div className="container mt-5 mb-5">
                 <CarouselProddeInteres productos={ListProddeInteres}/>
+            </div>
+            <div className="container mt-5 mb-5">
+                <img src={require('../images/BanerSamsung.jpg')} style={{width:'100%', borderRadius:'5px'}}/>
+            </div>
+            <div>
+                <FooterProductos/>
             </div>
         </div>
      );
