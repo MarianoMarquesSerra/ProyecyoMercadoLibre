@@ -1,11 +1,12 @@
 import { BiChevronRight } from "react-icons/bi";
 import { TbLetterI } from "react-icons/tb";
+import CarouselProddeInteres from "../componentes/CarouselProddeInteres";
 import DescripcionProducto from "../componentes/DescripcionProducto";
 import HeaderProducto from "../componentes/HeaderProducto";
 import Navbar from "../componentes/Navbar";
 import PreguntasyRespuestas from "../componentes/PreguntasyRespuestas";
 import ProductosSimilares from "../componentes/ProductosSimilares";
-import TablaDescSimilares from "../componentes/TablaDescSimilares";
+import ListProddeInteres from "../apis/ListProddeInteres";
 
 
 const VistaProducto = () => {
@@ -57,7 +58,7 @@ const VistaProducto = () => {
                 <h4>También te puede interesar</h4>
             </div>
             <div className="container mt-4">
-
+                <CarouselProddeInteres productos={ListProddeInteres}/>
             </div>
         </div>
      );

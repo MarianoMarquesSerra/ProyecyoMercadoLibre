@@ -734,6 +734,15 @@ li{
   cursor: pointer;
 }
 
+.ImgCarousel{
+  width: auto;
+  height: auto;
+  max-width: 180px;
+  max-height: 180px;
+  cursor: pointer;
+}
+
+
 .ImgSmall:hover {
   border: 2px solid rgb(48, 125, 241);
 }
@@ -747,6 +756,15 @@ li{
 
 .cardHeight{
   height: 280px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardCarouselHeight{
+  height: 200px;
   margin: 0;
   padding: 0;
   display: flex;
