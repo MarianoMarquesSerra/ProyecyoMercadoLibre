@@ -8,9 +8,15 @@ import PreguntasyRespuestas from "../componentes/PreguntasyRespuestas";
 import ProductosSimilares from "../componentes/ProductosSimilares";
 import ListProddeInteres from "../apis/ListProddeInteres";
 import FooterProductos from "../componentes/FooterProductos";
+import { useParams } from "react-router-dom";
+import { useState } from "react";
+
 
 
 const VistaProducto = () => {
+    const id = useParams();
+    let [prodselected,setProdselected] = useState();
+
     return ( 
         <div className="bg-page">
             <div id="cabecera">

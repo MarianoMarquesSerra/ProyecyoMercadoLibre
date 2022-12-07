@@ -27,7 +27,7 @@ const TablaCaracteristicas = () => {
                   <td>Black</td>
                 </tr>
                 <tr>
-                  <th class="fondoStrong">Tipo de mader del cuerpo</th>
+                  <th class="fondoStrong">Tipo de madera del cuerpo</th>
                   <td>Aliso/Fresno</td>
                 </tr>
                 <tr>

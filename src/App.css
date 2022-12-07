@@ -572,6 +572,12 @@ li{
   animation: animar-rotar-abajo 0.5s linear forwards;
 }
 
+#listaFooter li{
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 @keyframes animar-rotar-arriba {
 
   100%
@@ -644,6 +650,11 @@ li{
   display: flex;
   position: relative;
   margin: auto;
+}
+
+.contenedorFooter{
+  top:0;
+  animation: crecer-menu 0.5s linear forwards;
 }
 
 
