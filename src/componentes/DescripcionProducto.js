@@ -6,14 +6,19 @@ import { IoIosHeartEmpty } from "react-icons/io";
 import CarouselProductos from './CarouselProductos';
 import TablaCaracteristicas from './TablaCaracteristicas';
 import CaracteristicasAdicionales from './CaracteristicasAdicionales';
+import { useState } from 'react';
 
 
-const DescripcionProducto = () => {
+const DescripcionProducto = ({producto}) => {
+    let [detalle,setDetalle] = useState([]);
+    const {detalles} = producto;
+    let deta = detalles;
 
     function asignImage(imagen){
         var fullImg = document.getElementById("imageBox");
         fullImg.src = imagen;
     }
+
 
     return ( 
         <>
@@ -44,27 +49,26 @@ const DescripcionProducto = () => {
                             </div>
                         </div>
                             <div>
-                                <h5>Guitarra eléctrica Fender American Vintage '56 Stratocaster de aliso/fresno black laca con diapasón de arce</h5>
+                                <h5>{producto.titulo}</h5>
                             </div>
                             <div class="pt-4">
-                                <h5 style={{font:'cah5tion', fontSize:'33px'}}>$ 1.403.105</h5>
+                                <h5 style={{font:'cah5tion', fontSize:'33px'}}>$ {producto.precio}</h5>
                                 <h5 style={{font:'caption', fontSize:'16px'}}>Pagá en cuotas</h5>
                                 <p class="text-primary">Ver los medios de pago</p>
                             </div>
                             <div>
-                                <h5 style={{font:'caption', fontSize:'14px'}}>Orientación de la mano: <span style={{fontWeight:'bold'}}>Diestro</span></h5>
-                                <h5 style={{font:'caption', fontSize:'14px'}}>Color: <span style={{fontWeight:'bold'}}>Black</span></h5>
+                                <h5 style={{font:'caption', fontSize:'14px'}}>Orientación de la mano: <span style={{fontWeight:'bold'}}>{producto.orientdelamano}</span></h5>
+                                <h5 style={{font:'caption', fontSize:'14px'}}>Color: <span style={{fontWeight:'bold'}}>{producto.color}</span></h5>
                             </div>
                             <div>
                                 <ul class="liTypeStyle text-secondary" style={{lineHeight: '1px'}}>
-                                    <li>Fabricada en aliso/fresno con acabado de laca.</li>
-                                    <li >Con 6 cuerdas y 21 trastes.</li>
-                                    <li >El largo de escala es de 25.5 ".</li>
-                                    <li >El puente es tremolo.</li>
-                                    <li >Incluye 3 micrófonos simples.</li>
-                                    <li >Controles de selector de micrófonos, tono y volumen.</li>
-                                    <li >Palanca incluida.</li>
-                                    <li >Sonidos fuertes y firmes con un estilo propio.</li>
+                                    {
+                                        producto.detalles?.map((det,i)=>{
+                                            return (
+                                                <li key={i}>{det}</li>
+                                            )
+                                        })
+                                    }
                                 </ul>
                             </div>
                     </div>

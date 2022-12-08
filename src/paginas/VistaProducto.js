@@ -9,13 +9,23 @@ import ProductosSimilares from "../componentes/ProductosSimilares";
 import ListProddeInteres from "../apis/ListProddeInteres";
 import FooterProductos from "../componentes/FooterProductos";
 import { useParams } from "react-router-dom";
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
+import productos from "../apis/ListProductos";
 
 
 const VistaProducto = () => {
-    const id = useParams();
-    let [prodselected,setProdselected] = useState();
+    const {id} = useParams();
+    let [prodselected,setProdselected] = useState({});
+
+    useEffect(()=>{
+        productos.map((producto)=>{
+            if(producto.id == id){
+                setProdselected(producto);
+            }
+        });
+    },[]);
+
+    console.log(prodselected);
 
     return ( 
         <div className="bg-page">
@@ -43,7 +53,7 @@ const VistaProducto = () => {
             <div class="container bg-white">
                 <div class="row">
                     <div class="col-8">
-                        <DescripcionProducto/>
+                        <DescripcionProducto producto={prodselected}/>
                     </div>
                     <div class="col-4">
                         <HeaderProducto/>
