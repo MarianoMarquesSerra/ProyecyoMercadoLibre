@@ -7,12 +7,10 @@ import CarouselProductos from './CarouselProductos';
 import TablaCaracteristicas from './TablaCaracteristicas';
 import CaracteristicasAdicionales from './CaracteristicasAdicionales';
 import { useState } from 'react';
+import ListProdOtrosComp from "../apis/ListProdOtrosComp";
 
 
 const DescripcionProducto = ({producto}) => {
-    let [detalle,setDetalle] = useState([]);
-    const {detalles} = producto;
-    let deta = detalles;
 
     function asignImage(imagen){
         var fullImg = document.getElementById("imageBox");
@@ -32,7 +30,7 @@ const DescripcionProducto = ({producto}) => {
                         </div>
                         <div class="col-10">
                             <div class="container my-4" style={{width:'400px', height:'600px'}}>
-                                <img id="imageBox" class="ImgLarge" src={require('../images/img1LargeFenderStr.jpg')}/>
+                                <img id="imageBox" class="ImgLarge" src={producto.img}/>
                             </div>
                         </div>
                     </div>
@@ -41,8 +39,8 @@ const DescripcionProducto = ({producto}) => {
                     <div class="container">
                         <div class="row ">
                             <div class="col-10">
-                                <a>Nuevo <TbLetterI/> </a>
-                                <a>1 vendido</a>
+                                <a>{producto.condicion} <TbLetterI/> </a>
+                                <a>{producto.cantvend} vendido</a>
                             </div>
                             <div class="col-2 text-primary">
                                 <a><IoIosHeartEmpty size={26}/></a>
@@ -76,24 +74,24 @@ const DescripcionProducto = ({producto}) => {
                 <hr style={{width:'95%'}}></hr>
                 <h4>Quienes vieron este producto también compraron</h4>
                 <div class="container-fluid">
-                    <CarouselProductos/>
+                    <CarouselProductos productos={ListProdOtrosComp}/>
                 </div>
                 <hr class="mt-5" style={{width:'95%'}}></hr>
                 <div class="mt-4">
                     <h4>Características principales</h4>
-                    <TablaCaracteristicas/>
+                    <TablaCaracteristicas tabla={producto.tablacaracteristicas}/>
                 </div>
                 <div class="mt-4 text-dark">
                     <h5>Otros</h5>
-                    <CaracteristicasAdicionales/>
+                    <CaracteristicasAdicionales caracteristicas={producto.caracteristicas}/>
                 </div>
                 <hr class="mt-5" style={{width:'95%'}}></hr>
                 <div>
                     <h4>Descripción</h4>
-                    <p>Hablar de Fender es entender la música en todo el mundo y en muchos géneros. Es una de las marcas líderes en definir los sonidos que escuchamos. A su vez, satisface las necesidades de guitarristas al crear productos de calidad y respaldarlos con servicio y estabilidad..</p>
+                    <p>{producto.descripcion1}</p>
                     <br></br>
-                    <p>Una forma brara cada estilo musical</p>
-                    <p>Esta Stratocaster es el máximo referente de las guitarras a lo largo de su historia. Cuenta con pastillas que incluyen selectores, tonos y volumen máster. Tiene un sonido cálido, cristalino, percusivo y con mucha textura. Su forma hace que sea el modelo que más se adapta al cuerpo humano, lo que otorga mayor versatilidad en su uso. Eric Clapton es el representante de este instrumento, por lo que es ideal para estilos como el rock y el blues.</p>
+                    <p>{producto.descripcion2}</p>
+                    <p>{producto.descripcion3}</p>
                 </div>
             </div>
         </>

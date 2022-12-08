@@ -25,7 +25,6 @@ const VistaProducto = () => {
         });
     },[]);
 
-    console.log(prodselected);
 
     return ( 
         <div className="bg-page">
@@ -61,7 +60,7 @@ const VistaProducto = () => {
                 </div>
                 <hr></hr>
                 <div class="mt-5 mb-5">
-                    <ProductosSimilares/>
+                    <ProductosSimilares producto={prodselected}/>
                 </div>
                 <hr></hr>
                 <div class="mt-5 mb-5">

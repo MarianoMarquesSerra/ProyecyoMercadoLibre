@@ -4,7 +4,7 @@ import ListProdSimilares from "../apis/ListProdSimilares";
 import ListProdVisitados from "../apis/ListProdVisitados";
 import TablaDescSimilares from "./TablaDescSimilares";
 
-const ProductosSimilares = () => {
+const ProductosSimilares = ({producto}) => {
     var [ListProductos, setLisProductos] = useState([]);
 
     function toggleSwitch(selector){
@@ -49,9 +49,9 @@ const ProductosSimilares = () => {
                 <div class="col-1"></div>
                 <div class="col-3">
                     <div class="card border-0" style={{width: '15rem'}}>
-                    <img class="card-img-top d-flex m-auto ImageMD" src={require('../images/img1LargeFenderStr.jpg')} alt="Card image cap"/>
+                    <img class="card-img-top d-flex m-auto ImageMD" src={producto.img} alt="Card image producto"/>
                         <div class="card-body text-center">
-                            <h5 class="card-title p-0" style={{fontSize:'14px'}}>Guitarra eléctrica Fender American Vintage '56 Stratocaster de aliso/fres...</h5>
+                            <h5 class="card-title p-0" style={{fontSize:'14px'}}>{producto.titulosm}</h5>
                             <p class="text-secondary">(Este producto)</p>
                         </div>
                     </div>
