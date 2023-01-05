@@ -1,9 +1,12 @@
+import React, { useEffect } from "react";
 import { BiSearchAlt2 } from "react-icons/bi";
 import L from "../images/L.jpg";
 import { AiOutlineDown, AiOutlineQuestionCircle } from "react-icons/ai";
 
 
-const PreguntasyRespuestas = () => {
+
+const PreguntasyRespuestas = ({preg,resp}) => {
+
     return ( 
         <div className="container">
             <h5>Preguntas y respuestas</h5>
@@ -36,11 +39,11 @@ const PreguntasyRespuestas = () => {
                 <h5>Últimas realizadas</h5>
             </div>
             <div className="mt-4">
-                <p className="mb-0">Tipo de madera del cuerpo?</p>
+                <p className="mb-0">{preg}</p>
                 <div className="mt-0 mx-2"><img className="floatLeft" src={L}></img>
                 </div>
                 <div className="mt-3 text-secondary contenedorPreguntas">
-                    <p style={{lineHeight:'0px'}}>Aliso/Fresno</p>
+                    <p style={{lineHeight:'0px'}}>{resp}</p>
                     <p style={{lineHeight:'0px',marginLeft:'30px',fontSize:'14px'}}>Respondido por Mercado Libre</p>
                     <p style={{lineHeight:'0px',marginLeft:'35px',fontSize:'14px',color:'blue'}}>Denunciar</p>
                 </div>
@@ -49,7 +52,7 @@ const PreguntasyRespuestas = () => {
                 </div>
                 <div className="mt-5">
                     <a className="text-primary text-decoration-none fw-bold fondoSky rounded d-flex justify-content-center align-items-center px-4" style={{width:'330px', height:'45px'}}><AiOutlineQuestionCircle fontSize={18}/><span style={{marginLeft:'15px'}}>¿Cómo le pregunto al vendedor?</span></a>
-                </div>
+                </div>            
             </div>
         </div>
      );

@@ -1,22 +1,18 @@
-import Img1 from '../images/img1LargeFenderStr.jpg';
-import Img2 from '../images/img2LargeFenderStr.jpg';
-import Img3 from '../images/img3LargeFenderStr.jpg';
 import { TbLetterI } from "react-icons/tb";
 import { IoIosHeartEmpty } from "react-icons/io";
 import CarouselProductos from './CarouselProductos';
 import TablaCaracteristicas from './TablaCaracteristicas';
 import CaracteristicasAdicionales from './CaracteristicasAdicionales';
-import { useState } from 'react';
 import ListProdOtrosComp from "../apis/ListProdOtrosComp";
 
 
 const DescripcionProducto = ({producto}) => {
+    const ListProdComprados = [];
 
     function asignImage(imagen){
         var fullImg = document.getElementById("imageBox");
         fullImg.src = imagen;
     }
-
 
     return ( 
         <>
@@ -24,9 +20,9 @@ const DescripcionProducto = ({producto}) => {
                 <div class="col-6">
                     <div class="row">
                         <div class="col-2">
-                            <div class="my-2" style={{width:'50px', height:'50px'}}><img class="ImgSmall" src={require('../images/img1FenderStr.jpg')} id="smallImg1" onMouseEnter={() =>asignImage(Img1)}/></div>
-                            <div class="my-2" style={{width:'50px', height:'50px'}}><img class="ImgSmall" src={require('../images/img2FenderStr.jpg')} id="smallImg2" onMouseEnter={() =>asignImage(Img2)}/></div>
-                            <div class="my-2" style={{width:'50px', height:'50px'}}><img class="ImgSmall" src={require('../images/img3FenderStr.jpg')} id="smallImg3" onMouseEnter={() =>asignImage(Img3)}/></div>
+                            <div class="my-2" style={{width:'50px', height:'50px'}}><img class="ImgSmall" src={producto.imgsm1} id="smallImg1" onMouseEnter={() =>asignImage(producto.img)}/></div>
+                            <div class="my-2" style={{width:'50px', height:'50px'}}><img class="ImgSmall" src={producto.imgsm2} id="smallImg2" onMouseEnter={() =>asignImage(producto.img2)}/></div>
+                            <div class="my-2" style={{width:'50px', height:'50px'}}><img class="ImgSmall" src={producto.imgsm3} id="smallImg3" onMouseEnter={() =>asignImage(producto.img3)}/></div>
                         </div>
                         <div class="col-10">
                             <div class="container my-4" style={{width:'400px', height:'600px'}}>
@@ -74,7 +70,16 @@ const DescripcionProducto = ({producto}) => {
                 <hr style={{width:'95%'}}></hr>
                 <h4>Quienes vieron este producto también compraron</h4>
                 <div class="container-fluid">
-                    <CarouselProductos productos={ListProdOtrosComp}/>
+                    {
+                            ListProdOtrosComp.map((prod)=>{
+                                if(producto.categoria == prod.categoria){
+                                    ListProdComprados.push(prod)
+                                }
+                            
+                            })
+                               
+                        }
+                        <CarouselProductos productos={ListProdComprados}/>
                 </div>
                 <hr class="mt-5" style={{width:'95%'}}></hr>
                 <div class="mt-4">

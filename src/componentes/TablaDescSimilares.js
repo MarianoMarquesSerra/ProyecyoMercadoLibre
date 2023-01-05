@@ -1,6 +1,6 @@
 import { useState,useEffect } from 'react';
 
-const TablaDescSimilares = ({productos}) => {
+const TablaDescSimilares = ({productos,categoria}) => {
   const [cantVendidas,setcantVendidas] = useState([]);
 
 
@@ -60,93 +60,114 @@ const TablaDescSimilares = ({productos}) => {
                   <th class="border fondo">Precio</th>
                   <td class="border">$ 1.473.260</td>
                   {productos.map((producto,i)=>{
-                    return(
-
-                        <td class="border" key={i}>$ {producto.precio}</td>
-                      
-                    )})}
+                    if(producto.categoria==categoria){
+                      return(
+  
+                          <td class="border" key={i}>$ {producto.precio}</td>
+                        
+                      )
+                    }
+                    })}
                 </tr>
                 <tr class="border">
                   <th class="border fondoStrong">Forma del cuerpo</th>
                   <td class="border">Stratocaster</td>
                   {productos.map((producto,i)=>{
-                    return(
-
-                        <td class="border" key={i}>$ {producto.modelo}</td>
-                      
-                    )})}
+                    if(producto.categoria==categoria){
+                      return(
+  
+                          <td class="border" key={i}>$ {producto.modelo}</td>
+                        
+                      )
+                    }
+                    })}
                 </tr>
                 <tr class="border">
                   <th class="border fondo">Orientación de la mano</th>
                   <td class="border">Diestro</td>
                   {productos.map((producto,i)=>{
-                    return(
-
-                        <td class="border" key={i}>$ {producto.orientacion}</td>
-                    )
-                  
+                    if(producto.categoria==categoria){
+                      return(    
+                      
+                            <td class="border" key={i}>$ {producto.orientacion}</td>
+                      )
+                    }
                     })}
                 </tr>
                 <tr class="border">
                   <th class="border fondoStrong">Color</th>
                   <td class="border">Black</td>
                   {productos.map((producto,i)=>{
-                    return(
-
-                        <td class="border" key={i}>$ {producto.color}</td>
-                      
-                    )})}
+                    if(producto.categoria==categoria){
+                      return(
+  
+                          <td class="border" key={i}>$ {producto.color}</td>
+                        
+                      )
+                    }
+                    })}
                 </tr>
                 <tr class="border">
                   <th class="border fondo">Tipo de madera del cuerpo</th>
                   <td class="border">Aliso/Fresno</td>
                   {productos.map((producto,i)=>{
-                    return(
-
-                        <td class="border" key={i}>$ {producto.cuerpo}</td>
-                      
-                    )})}
+                    if(producto.categoria==categoria){
+                      return(
+  
+                          <td class="border" key={i}>$ {producto.cuerpo}</td>
+                        
+                      )
+                    }
+                    })}
                 </tr>
                 <tr class="border">
                   <th class="border fondoStrong">Material del diapasón</th>
                   <td class="border">Arce</td>
                   {productos.map((producto,i)=>{
-                    return(
-
-                        <td class="border" key={i}>$ {producto.diapason}</td>
-                    )
-                  
+                    if(producto.categoria==categoria){
+                      return(    
+                      
+                          <td class="border" key={i}>$ {producto.diapason}</td>
+                      )
+                    }
                     })}
                 </tr>
                 <tr class="border">
                   <th class="border fondo">Acabado del cuerpo</th>
                   {productos.map((producto,i)=>{
-                    return(
-
-                        <td class="border" key={i}>$ {producto.acabado}</td>
-                    )
-                  
+                    if(producto.categoria==categoria){
+                      return( 
+                      
+                          <td class="border" key={i}>$ {producto.acabado}</td>
+                      )
+                    }
                     })}
                 </tr>
                 <tr class="border">
                   <th class="border fondoStrong">Modelo detallado</th>
                   <td class="border">0111502806</td>
                   {productos.map((producto,i)=>{
-                    return(
-
-                        <td class="border" key={i}>$ {producto.moddet}</td>
-                      
-                    )})}
+                    if(producto.categoria==categoria){
+                      return(
+  
+                          <td class="border" key={i}>$ {producto.moddet}</td>
+                        
+                      )
+                    }
+                    })}
                 </tr>
                 <tr class="border">
                   <th class="border fondoStrong">Origen</th>
                   <td class="border">-</td>
                   {productos.map((producto,i)=>{
-                    return(
-
-                        <td class="border" key={i}>$ {producto.origen}</td>
-                      
-                    )})}
+                    if(producto.categoria==categoria){
+                      return(
+  
+                          <td class="border" key={i}>$ {producto.origen}</td>
+                        
+                      )
+                    }
+                    })}
                 </tr>
             </table>
         </div>

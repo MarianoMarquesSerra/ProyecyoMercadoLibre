@@ -5,7 +5,7 @@ import { IoShieldCheckmarkOutline, IoTrophyOutline, IoRibbonOutline } from "reac
 import Img1 from '../images/img1LargeFenderStr.jpg';
 
 
-const HeaderProducto = () => {
+const HeaderProducto = ({producto}) => {
     return ( 
             <div class="container bg-white" style={{fontSize:'14px'}}>
                 <div class="container card mt-3 p-2 border">
@@ -22,7 +22,7 @@ const HeaderProducto = () => {
                         </div>
                     </div>
                     <div>
-                        <p>Vendido por <span class="text-primary">CASALIBERTELLA</span>
+                        <p>Vendido por <span class="text-primary">{producto.vendedor}</span>
                             <span class="d-block">MercadoLíder <span class="text-secondary"><TbLetterI/></span> 1.461 ventas</span>
                         </p>
                         <p style={{fontWeight:'bold', fontSize:'17px'}}>¡Última disponible!</p>

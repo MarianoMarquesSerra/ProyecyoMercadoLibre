@@ -58,14 +58,14 @@ const ProductosSimilares = ({producto}) => {
                 </div>
                 <div class="col-8">
                     <div class="Ocultar" id="MuetraProdSimil">
-                        <MostrarSimilares productos={ListProdSimilares}/>
+                        <MostrarSimilares productos={ListProdSimilares} categoria={producto.categoria}/>
                     </div>
                     <div class="Ocultar" id="MuetraProdVisit">
-                        <MostrarSimilares productos={ListProdVisitados}/>
+                        <MostrarSimilares productos={ListProdVisitados} categoria={producto.categoria}/>
                     </div>
                 </div>
                 <div>
-                    <TablaDescSimilares productos={ListProductos}/>
+                    <TablaDescSimilares productos={ListProductos} categoria={producto.categoria}/>
                 </div>
             </div>
         </div>

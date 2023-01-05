@@ -6,16 +6,22 @@ import HeaderProducto from "../componentes/HeaderProducto";
 import Navbar from "../componentes/Navbar";
 import PreguntasyRespuestas from "../componentes/PreguntasyRespuestas";
 import ProductosSimilares from "../componentes/ProductosSimilares";
+import productos from "../apis/ListProductos";
 import ListProddeInteres from "../apis/ListProddeInteres";
+import ListPreguntas from "../apis/ListPreguntas";
 import FooterProductos from "../componentes/FooterProductos";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import productos from "../apis/ListProductos";
+
 
 
 const VistaProducto = () => {
     const {id} = useParams();
     let [prodselected,setProdselected] = useState({});
+    let ProddeInteres = [];
+    let pregunta = "";
+    let respuesta = "";
+
 
     useEffect(()=>{
         productos.map((producto)=>{
@@ -24,6 +30,22 @@ const VistaProducto = () => {
             }
         });
     },[]);
+
+
+    function cargarPreguntas(){
+        console.log("Lo ejecutó");
+        ListPreguntas.map((preg)=>{
+            console.log("Ingresó al ciclo");
+            if(preg.id == prodselected.id && preg.categoria == prodselected.categoria){
+                console.log("Lo encontró");
+                pregunta=preg.pregunta;
+                respuesta=preg.respuesta;
+            }
+            console.log(pregunta);
+            console.log(respuesta);
+        });
+        return <PreguntasyRespuestas preg={pregunta} resp={respuesta}/>
+    }
 
 
     return ( 
@@ -37,10 +59,10 @@ const VistaProducto = () => {
                 <p class="pt-3" style={{fontSize:'15px'}}><span style={{fontWeight:'bold'}}>También puede interesarte: </span>guitarra eléctrica - prs sky</p>
                     <div class="col-8">
                         <a>Volver al listado <TbLetterI/> </a>
-                        <a><span class="text-primary">Instrumentos Musicales </span><span style={{fontSize:'19px'}}><BiChevronRight/></span> </a>
-                        <a><span class="text-primary">Instrumentos de Cuerdas </span> <span style={{fontSize:'19px'}}><BiChevronRight/></span> </a>
-                        <a><span class="text-primary">Guitarras </span> <span style={{fontSize:'19px'}}><BiChevronRight/></span> </a>
-                        <a><span class="text-primary">Eléctricas </span></a>
+                        <a><span class="text-primary">{prodselected.subcategoria2} </span><span style={{fontSize:'19px'}}><BiChevronRight/></span> </a>
+                        <a><span class="text-primary">{prodselected.subcategoria3} </span> <span style={{fontSize:'19px'}}><BiChevronRight/></span> </a>
+                        <a><span class="text-primary">{prodselected.subcategoria4} </span> <span style={{fontSize:'19px'}}><BiChevronRight/></span> </a>
+                        <a><span class="text-primary">{prodselected.subcategoria5} </span></a>
                     </div>
                     <div class="col-2 offset-md-2">
                         <a><span class="text-primary">Compartir <span style={{color:'black'}}><TbLetterI/></span> </span></a>
@@ -55,7 +77,7 @@ const VistaProducto = () => {
                         <DescripcionProducto producto={prodselected}/>
                     </div>
                     <div class="col-4">
-                        <HeaderProducto/>
+                        <HeaderProducto producto={prodselected}/>
                     </div>
                 </div>
                 <hr></hr>
@@ -64,7 +86,7 @@ const VistaProducto = () => {
                 </div>
                 <hr></hr>
                 <div class="mt-5 mb-5">
-                    <PreguntasyRespuestas/>
+                    {cargarPreguntas()}
                 </div>
                 <hr></hr>
                 &nbsp;&nbsp;
@@ -74,7 +96,13 @@ const VistaProducto = () => {
                 <h4>También te puede interesar</h4>
             </div>
             <div className="container mt-5 mb-5">
-                <CarouselProddeInteres productos={ListProddeInteres}/>
+            {ListProddeInteres.map((prod)=>{
+            if(prod.subcategoria == prodselected.subcategoria){
+                ProddeInteres.push(prod);
+            }
+            })}
+            {console.log(ProddeInteres)}
+            <CarouselProddeInteres productos={ProddeInteres}/>
             </div>
             <div className="container mt-5 mb-5">
                 <img src={require('../images/BanerSamsung.jpg')} style={{width:'100%', borderRadius:'5px'}}/>
