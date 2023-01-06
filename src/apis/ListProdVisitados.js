@@ -46,6 +46,48 @@ const ListProdVisitados = [
         moddet:"-",
         origen:"-",
         cantidad:38
+    },
+    {
+        id:4,
+        img:require('../images/tvSamsungSeries6.jpg'),
+        desc:"Smart TV Samsung Series 6 QN55Q60AAGCZB QLED 4K 55",
+        precio: 179.999,
+        modelo: "QN55Q60AAGCZB",
+        categoria:"TV",
+        voltaje:"220V - 240V",
+        frecuencia:"50 Hz x 60 Hz",
+        tipodepantalla:"QLED",
+        tamañodepantalla:"55",
+        tipoderesolucion:"4 K",
+        conHDR:"Sí"
+    },
+    {
+        id:5,
+        img:require('../images/tvRCA.jpg'),
+        desc:"Smart TV RCA AND55FXUHD LCD 4K 55 220V - 240V",
+        precio: 123.999,
+        modelo: "-",
+        categoria:"TV",
+        voltaje:"110V/240V",
+        frecuencia:"50 Hz x 60 Hz",
+        tipodepantalla:"LCD",
+        tamañodepantalla:"55",
+        tipoderesolucion:"4K",
+        conHDR:"Sí"
+    },
+    {
+        id:6,
+        img:require('../images/tvTCLP7252.jpg'),
+        desc:"Smart TV TCL P725-Series 55P725 DLED 4K 55 100V/240V",
+        precio: 139.699,
+        modelo: "-",
+        categoria:"TV",
+        voltaje:"220V - 240V",
+        frecuencia:"50 Hz x 60 Hz",
+        tipodepantalla:"LCD",
+        tamañodepantalla:"55",
+        tipoderesolucion:"4 K",
+        conHDR:"Sí"
     }
 ]
 

@@ -46,6 +46,48 @@ const ListProdSimilares = [
         moddet:"-",
         origen:"Mexico",
         cantidad:0
+    },
+    {
+        id:4,
+        img:require('../images/tvSamsungSeries5.jpg'),
+        desc:"Smart TV Samsung Series 5 UN43T5300AGCZB LED Full HD 43",
+        precio: 83.999,
+        modelo: "UN43T5300AGCZB",
+        categoria:"TV",
+        voltaje:"220V - 240V",
+        frecuencia:"50 Hz x 60 Hz",
+        tipodepantalla:"LED",
+        tamañodepantalla:"43",
+        tipoderesolucion:"Full HD",
+        conHDR:"Sí"
+    },
+    {
+        id:5,
+        img:require('../images/tvPhilips7000.jpg'),
+        desc:"Smart TV Philips 7000 Series 50PUD7406/77 LED 4K 50",
+        precio: 102.999,
+        modelo: "50PUD7406/77",
+        categoria:"TV",
+        voltaje:"110V/240V",
+        frecuencia:"50 Hz x 60 Hz",
+        tipodepantalla:"LED",
+        tamañodepantalla:"50",
+        tipoderesolucion:"4K",
+        conHDR:"Sí"
+    },
+    {
+        id:6,
+        img:require('../images/tvSamsungSeries5.jpg'),
+        desc:"Smart TV Samsung Series 5 UN43T5300AGCZB LED Full HD 43",
+        precio: 83.999,
+        modelo: "UN43T5300AGCZB",
+        categoria:"TV",
+        voltaje:"220V - 240V",
+        frecuencia:"50 Hz x 60 Hz",
+        tipodepantalla:"LED",
+        tamañodepantalla:"43",
+        tipoderesolucion:"Full HD",
+        conHDR:"Sí"
     }
 ]
 
