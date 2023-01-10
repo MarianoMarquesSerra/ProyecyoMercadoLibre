@@ -6,7 +6,7 @@ const MostrarSimilares = ({productos,categoria}) => {
         <div class="container">
             <div class="row">
                 {productos.map((producto, i)=>{
-                    console.log(producto.categoria);
+
                     if(producto.categoria==categoria){
                         
                         return(
