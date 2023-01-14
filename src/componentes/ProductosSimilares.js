@@ -5,7 +5,8 @@ import ListProdVisitados from "../apis/ListProdVisitados";
 import TablaDescSimilares from "./TablaDescSimilares";
 
 const ProductosSimilares = ({producto}) => {
-    var [ListProductos, setLisProductos] = useState([]);
+    const [ListProductos, setListProductos] = useState();
+    const [ListOpiniones, setListOpimiones] = useState();
 
     function toggleSwitch(selector){
         var similares = document.getElementById("ProdSimil");
@@ -21,7 +22,8 @@ const ProductosSimilares = ({producto}) => {
                 }
                 similares.classList.add('ItemSelected');
                 contenedor1.classList.add('Mostrar');
-                setLisProductos(ListProdSimilares);
+                setListProductos(producto.prodsimilares);
+                setListOpimiones(ListProdSimilares);
             }else if(selector=="VisitRec"){
                 if (similares.classList.contains('ItemSelected')){
                     similares.classList.remove('ItemSelected');
@@ -29,15 +31,18 @@ const ProductosSimilares = ({producto}) => {
                 }
                 visitados.classList.add('ItemSelected');
                 contenedor2.classList.add('Mostrar');
-                setLisProductos(ListProdVisitados);
+                setListProductos(producto.prodvisitados);
+                setListOpimiones(ListProdVisitados);
                 }
             
     }
 
     useEffect(()=>{
         toggleSwitch("ProdSimil");
+        setListProductos(producto.prodsimilares);
     },[]);
 
+  
     return ( 
         <div class="container">
             <h4>Compará con otros productos similares</h4>
@@ -65,7 +70,7 @@ const ProductosSimilares = ({producto}) => {
                     </div>
                 </div>
                 <div>
-                    <TablaDescSimilares productos={ListProductos} categoria={producto.categoria}/>
+                    <TablaDescSimilares prodsimil={ListProductos} opiniones={ListOpiniones}/>
                 </div>
             </div>
         </div>

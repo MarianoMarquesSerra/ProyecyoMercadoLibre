@@ -45,7 +45,27 @@ const ListProductos = [
                         {caracteristica:"Tipo de micrófono mástil:",valor:"New American Vintage '56 Strat"},{caracteristica:"Tipo de micrófono puente:",valor:"New American Vintage '56 Strat"}],
         descripcion1:"Hablar de Fender es entender la música en todo el mundo y en muchos géneros. Es una de las marcas líderes en definir los sonidos que escuchamos. A su vez, satisface las necesidades de guitarristas al crear productos de calidad y respaldarlos con servicio y estabilidad...",
         descripcion2:"Una forma para cada estilo musical",
-        descripcion3:"Esta Stratocaster es el máximo referente de las guitarras a lo largo de su historia. Cuenta con pastillas que incluyen selectores, tonos y volumen máster. Tiene un sonido cálido, cristalino, percusivo y con mucha textura. Su forma hace que sea el modelo que más se adapta al cuerpo humano, lo que otorga mayor versatilidad en su uso. Eric Clapton es el representante de este instrumento, por lo que es ideal para estilos como el rock y el blues."
+        descripcion3:"Esta Stratocaster es el máximo referente de las guitarras a lo largo de su historia. Cuenta con pastillas que incluyen selectores, tonos y volumen máster. Tiene un sonido cálido, cristalino, percusivo y con mucha textura. Su forma hace que sea el modelo que más se adapta al cuerpo humano, lo que otorga mayor versatilidad en su uso. Eric Clapton es el representante de este instrumento, por lo que es ideal para estilos como el rock y el blues.",
+        prodsimilares : [["Precio","$ 1.473.260","$ 662.057","$ 574.999","$ 1.532475"],
+                          ["Forma del cuerpo","Stratocaster","Stratocaster","Les Paul","Les Paul"],
+                          ["Orientación de la mano","Diestro","Diestro","Diestro","Diestro"],
+                          ["Color","Black","Olympic white","Smokehouse burst","Cobalt burst"],
+                          ["Tipo de madera del cuerpo","Aliso/Fresno","Aliso","Arce/Caoba","Arce/Caoba"],
+                          ["Material del diapasón","Arce","Arce","Palo de rosa","Palo de rosa"],
+                          ["Acabado del cuerpo","Uretano Brillante","Brillante","Brillante","-"],
+                          ["Modelo detallado","0111502806","-","LPST00KHCH1","-"],
+                          ["Origen","-","Mexico","-","Mexico"]
+                         ],
+        prodvisitados : [["Precio","$ 1.473.260","$ 2.404465","$ 874.999","$ 57.419"],
+                          ["Forma del cuerpo","Stratocaster","Telecaster","Stratocaster","Telecaster"],
+                          ["Orientación de la mano","Diestro","Diestro","Diestro","Diestro"],
+                          ["Color","Black","Butterscotch blonde","Black","Blue wood"],
+                          ["Tipo de madera del cuerpo","Aliso/Fresno","Fresno","Aliso","Lenga"],
+                          ["Material del diapasón","Arce","Arce","Arce","Palo de rosa"],
+                          ["Acabado del cuerpo","Uretano Brillante","Laca nitrocelulosa","Brillante","Laca"],
+                          ["Modelo detallado","0110202850","0144502506","LPST00KHCH1","-"],
+                          ["Origen","-","USA","USA","Argentina"]
+                         ]
     },
     {
         id:2,
