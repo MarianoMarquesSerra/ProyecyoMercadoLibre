@@ -29,6 +29,7 @@ const VistaProducto = () => {
                 setProdselected(producto);
             }
         });
+        cargarPreguntas();
     },[]);
 
 
@@ -101,7 +102,6 @@ const VistaProducto = () => {
                 ProddeInteres.push(prod);
             }
             })}
-            {console.log(ProddeInteres)}
             <CarouselProddeInteres productos={ProddeInteres}/>
             </div>
             <div className="container mt-5 mb-5">

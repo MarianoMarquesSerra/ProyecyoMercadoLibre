@@ -8,6 +8,11 @@ const ProductosSimilares = ({producto}) => {
     const [ListProductos, setListProductos] = useState();
     const [ListOpiniones, setListOpimiones] = useState();
 
+    useEffect(()=>{
+        toggleSwitch("ProdSimil");
+        setListProductos(producto.prodsimilares);
+    },[]);
+
     function toggleSwitch(selector){
         var similares = document.getElementById("ProdSimil");
         var visitados = document.getElementById("VisitRec");
@@ -37,10 +42,6 @@ const ProductosSimilares = ({producto}) => {
             
     }
 
-    useEffect(()=>{
-        toggleSwitch("ProdSimil");
-        setListProductos(producto.prodsimilares);
-    },[]);
 
   
     return ( 
@@ -70,7 +71,7 @@ const ProductosSimilares = ({producto}) => {
                     </div>
                 </div>
                 <div>
-                    <TablaDescSimilares prodsimil={ListProductos} opiniones={ListOpiniones}/>
+                        <TablaDescSimilares prodsimil={ListProductos ? ListProductos : producto.prodsimilares} opiniones={ListOpiniones}/>
                 </div>
             </div>
         </div>
