@@ -142,6 +142,150 @@ const ListProdOtrosComp = [
         precio:179.999,
         envio:"Envio gratís",
         categoria:"TV"
+    },
+    {
+        id:19,
+        img:require('../images/Marshall2525h.jpg'),
+        desc:"Amplificador Marshall 2525h Mini Silver Jubilee Valvular Uk",
+        precio:438.395,
+        envio:"Envio gratís",
+        categoria:"Amplificador"
+    },
+    {
+        id:20,
+        img:require('../images/Marshall2525hStudio.jpg'),
+        desc:"Marshall 2525h Studio Mini Jubilee Cabezal Valvular 20 Watts",
+        precio:452.143,
+        envio:"Envio gratís",
+        categoria:"Amplificador"
+    },
+    {
+        id:21,
+        img:require('../images/MarshallPlexiCombo.jpg'),
+        desc:"Marshall Plexi Combo - Fender Matchless Vox -",
+        precio:950.000,
+        envio:"Envio gratís",
+        categoria:"Amplificador"
+    },
+    {
+        id:22,
+        img:require('../images/FenderNash.jpg'),
+        desc:"Amplificador Valvular Nash Parlante Fender No Marshal Vox",
+        precio:130.000,
+        envio:"Envio gratís",
+        categoria:"Amplificador"
+    },
+    {
+        id:23,
+        img:require('../images/MarshallSV20H.jpg'),
+        desc:"Amplificador Marshall Sv20h Studio Cabezal Valvular 20w Uk 5",
+        precio:554.987,
+        envio:"Envio gratís",
+        categoria:"Amplificador"
+    },
+    {
+        id:24,
+        img:require('../images/MarshallSC20C.jpg'),
+        desc:"Cabezal Marshall Afd100 Slash Signature 100w",
+        precio:1.140000,
+        envio:"Envio gratís",
+        categoria:"Amplificador"
+    },
+    {
+        id:25,
+        img:require('../images/MarshallMiniPlexi.jpg'),
+        desc:"Amplificador Isfederty Isf 145 - Mini Plexi - 1w - Marshall",
+        precio:134.999,
+        envio:"Envio gratís",
+        categoria:"Amplificador"
+    },
+    {
+        id:26,
+        img:require('../images/MarshallSilverJubilee.jpg'),
+        desc:"Marshall Silver Jubilee 2555 (1987) 100w Vintage - Colección",
+        precio:720.999,
+        envio:"Envio gratís",
+        categoria:"Amplificador"
+    },
+    {
+        id:27,
+        img:require('../images/CajaMarshall2x12.jpg'),
+        desc:"Caja Marshall 2x12 1936 Inglesa Con Celestion Vintage 30",
+        precio:266.999,
+        envio:"Envio gratís",
+        categoria:"Amplificador"
+    },
+    {
+        id:28,
+        img:require('../images/NintendoSwitch32GB.jpg'),
+        desc:"Nintendo Switch 32GB Standard",
+        precio:222.999,
+        envio:"Envio gratís",
+        categoria:"Games"
+    },
+    {
+        id:29,
+        img:require('../images/PlayStation825GB.jpg'),
+        desc:"Sony PlayStation 5 825GB Horizon Forbidden West Bundle  color blanco y negro",
+        precio:539.999,
+        envio:"Envio gratís",
+        categoria:"Games"
+    },
+    {
+        id:30,
+        img:require('../images/PlayStation3.jpg'),
+        desc:"Sony PlayStation 3 Super Slim 500GB Standard  color charcoal black",
+        precio:107.499,
+        envio:"Envio gratís",
+        categoria:"Games"
+    },
+    {
+        id:31,
+        img:require('../images/PlayStation5PS5.jpg'),
+        desc:"Sony Playstation 5 Ps5 Con 2 Joystick Envios A Todo El Pais",
+        precio:449.999,
+        envio:"Envio gratís",
+        categoria:"Games"
+    },
+    {
+        id:32,
+        img:require('../images/MonitorPortatilXBox.jpg'),
+        desc:"Monitor Portátil Para Xbox One S, Xbox One, Ps4 Ps3 A Pedido",
+        precio:431.349,
+        envio:"Envio gratís",
+        categoria:"Games"
+    },
+    {
+        id:33,
+        img:require('../images/AtariFlash.jpg'),
+        desc:"Consola Retro Atari Flashback Blast V2 Hdmi - Nextgames",
+        precio:18.999,
+        envio:"Envio gratís",
+        categoria:"Games"
+    },
+    {
+        id:34,
+        img:require('../images/XBox360.jpg'),
+        desc:"Xbox 360 Las Mejores Imperdibles 500gb De Outlet Imperdibles",
+        precio:88.499,
+        envio:"Envio gratís",
+        categoria:"Games"
+    },
+    {
+        id:35,
+        img:require('../images/TetrisPortatil.jpg'),
+        desc:"Mini Consola Tetris Portatil Game Con 23 Juegos Clasicos ",
+        precio:979,
+        envio:"Envio gratís",
+        categoria:"Games"
+    },
+    {
+        id:36,
+        img:require('../images/PlayStation2.jpg'),
+        desc:"Ps2/30juegos Originales Instalados/memori/1joyno Lee Dvd!!!",
+        precio:35000,
+        envio:"Envio gratís",
+        categoria:"Games"
     }
     ]
     
