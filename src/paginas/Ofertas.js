@@ -4,11 +4,16 @@ import Inspiradoenloultimo from "../componentes/MostrarProductos";
 import Slider from "../componentes/Slider";
 import ListOfertas from "../apis/ListOfertas";
 import ListProductos from "../apis/ListProductos";
+import Navbar from "../componentes/Navbar";
+
 
 const Ofertas = () => {
     return ( 
-        <>
-            <div class="w-100 colorMenu fixed-top">
+        <>  
+            <div className="d-none d-md-block">
+                <Navbar/>
+            </div>
+            <div class="w-100 colorMenu fixed-top d-md-none d-sm-block">
                 <NavLink style={{ textDecoration: 'none', color:"black" }} to="/"><h4><AiOutlineArrowLeft/>&nbsp;&nbsp;Ofertas</h4></NavLink>
             </div>
             <div class="row w-100 mt-5 border-bottom">

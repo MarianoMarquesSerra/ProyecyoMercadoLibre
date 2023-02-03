@@ -783,6 +783,24 @@ li{
   align-items: center;
 }
 
+.contenedorTituloVentas{
+  width: 100%;
+  height: 275px;
+
+}
+
+.tituloVentas{
+  width: 500px;
+  height: 100px;
+  display: flex;
+  position: relative;
+  left: 25%;
+  top:25%;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Proxima Nova",-apple-system,Roboto,Arial,sans-serif,sans-serif;
+}
+
 
 @media screen and (min-width: 620px){
   .contenedorBoton{

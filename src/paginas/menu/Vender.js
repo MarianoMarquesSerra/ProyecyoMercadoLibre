@@ -1,14 +1,19 @@
-import { AiOutlineArrowLeft} from "react-icons/ai";
-import { NavLink } from "react-router-dom";
 import FooterProductos from "../../componentes/FooterProductos";
+import MenuVentas from "../../componentes/MenuVentas";
 
 const Vender = () => {
     return ( 
         <>
-            <div class="w-100 colorMenu fixed-top">
-                <NavLink style={{ textDecoration: 'none', color:"black" }} to="/"><h4><AiOutlineArrowLeft/>&nbsp;&nbsp;Vender</h4></NavLink>
+            <div className="contenedorTituloVentas colorMenu">
+                <div className="tituloVentas">
+                ¡Hola! Antes que nada contanos,
+                ¿qué vas a publicar?
+                </div>
             </div>
-            <FooterProductos/>
+            <MenuVentas/>
+            <div style={{position: 'relative', top: '250px'}}>
+                <FooterProductos/>
+            </div>
         </>
      );
 }

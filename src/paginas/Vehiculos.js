@@ -10,12 +10,16 @@ import ServiciosComplementarios from "../componentes/ServiciosComplementarios.js
 import NoticiasAutosCamionetas from "../componentes/NoticiasAutosCamionetas.jsx";
 import CategoriasAutos from "../componentes/CategoriasAutos.js";
 import ListVehiculos from "../apis/ListVehiculos.js";
+import Navbar from "../componentes/Navbar";
 
 const Vehiculos = () => {
     
                     return ( 
                       <>
-                          <div class="w-100 colorMenu fixed-top">
+                          <div className="d-none d-md-block">
+                            <Navbar/>
+                          </div>
+                          <div class="w-100 colorMenu fixed-top d-md-none d-sm-block">
                                   <NavLink style={{ textDecoration: 'none', color:"black" }} to="/"><h4><AiOutlineArrowLeft/>&nbsp;&nbsp;Vehículos</h4></NavLink>
                           </div>
                           <div class="MarginTop">

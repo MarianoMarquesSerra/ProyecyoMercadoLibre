@@ -9,11 +9,15 @@ import PromocionesModa from "../componentes/PromocionesModa";
 import Slider from "../componentes/Slider";
 import LisIconosModa from "../apis/ListIconosModa";
 import MenuModa from "../componentes/MenuModa";
+import Navbar from "../componentes/Navbar";
 
 const Moda = () => {
     return ( 
         <>
-            <div class="w-100 colorMenu fixed-top">
+            <div className="d-none d-md-block">
+                <Navbar/>
+            </div>
+            <div class="w-100 colorMenu fixed-top d-md-none d-sm-block">
                <NavLink style={{ textDecoration: 'none', color:"black" }} to="/"><h4><AiOutlineArrowLeft/>&nbsp;&nbsp;Ropa y Accesorios</h4></NavLink>
             </div>
             <div>

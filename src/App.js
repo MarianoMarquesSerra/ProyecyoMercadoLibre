@@ -14,7 +14,7 @@ import MERCADOCREDITO from "./paginas/menu/Mercadocredito.js";
 import PELICULASYSERIES from "./paginas/menu/Peliculasyseries.js";
 import HISTORIAL from "./paginas/menu/Historial.js";
 import MICUENTA from "./paginas/menu/Micuenta.js";
-import AYUDA from "./paginas/menu/Ayuda.js";
+import AYUDA from "./paginas/Ayuda.js";
 import MASVENDIDOS from "./paginas/menu/Masvendidos.js";
 import TIENDASOFICIALES from "./paginas/menu/Tiendasoficiales.js";
 import CATEGORIAS from "./paginas/menu/Categorias.js";

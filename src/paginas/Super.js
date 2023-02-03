@@ -7,11 +7,15 @@ import BuscaporDep from "../componentes/BuscaporDep";
 import SliderSuper from "../componentes/SliderSuper";
 import ListArticulosSuper from "../apis/ListArticulosSuper"
 import ListProductos from "../apis/ListProductos";
+import Navbar from "../componentes/Navbar";
 
 const Super = () => {
     return ( 
         <>
-            <div class="w-100 colorMenu fixed-top">
+            <div className="d-none d-md-block">
+                <Navbar/>
+            </div>
+            <div class="w-100 colorMenu fixed-top d-md-none d-sm-block">
                 <NavLink style={{ textDecoration: 'none', color:"black" }} to="/"><h4><AiOutlineArrowLeft/>&nbsp;&nbsp;Supermercado</h4></NavLink>
             </div>
             <div class="MarginTop">
