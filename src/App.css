@@ -800,6 +800,20 @@ li{
   font-family: "Proxima Nova",-apple-system,Roboto,Arial,sans-serif,sans-serif;
 }
 
+.itemSelectedBorder:hover{
+  border-left: 2px solid rgb(55, 126, 219);
+  cursor: pointer;
+  background-color: rgba(241, 234, 234, 0.527);
+}
+
+.itemSelected:hover{
+  cursor: pointer;
+  background-color: rgba(241, 234, 234, 0.527);
+}
+
+.addShade:hover{
+  box-shadow: 10px 5px 5px rgba(119, 116, 116, 0.219);
+}
 
 @media screen and (min-width: 620px){
   .contenedorBoton{
