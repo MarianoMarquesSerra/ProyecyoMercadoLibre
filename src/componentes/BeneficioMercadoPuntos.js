@@ -17,9 +17,9 @@ const BeneficioMercadoPuntos = () => {
                     <div class="contenedorBeneficios">
                     <div class="card-body">
                       <div class="row col-12 gap-0">
-                        <div class="col-xl-4"><img class="imgBeneficio" src={Espn}/></div>
-                        <div class="col-xl-4"><img  class="imgBeneficio" src={Hbo}/></div>
-                        <div class="col-xl-4"><img  class="imgBeneficio" src={Paramount}/></div>
+                        <div class="col-xl-4"><img class="imgBeneficio sizeImage" src={Espn}/></div>
+                        <div class="col-xl-4"><img  class="imgBeneficio sizeImage" src={Hbo}/></div>
+                        <div class="col-xl-4"><img  class="imgBeneficio sizeImage" src={Paramount}/></div>
                       </div>
                     </div>
                     </div>

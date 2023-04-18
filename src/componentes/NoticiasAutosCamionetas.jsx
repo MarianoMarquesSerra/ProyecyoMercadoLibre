@@ -15,7 +15,7 @@ const NoticiasAutosCamionetas = () => {
                         {ListAutosCamionetas.map((producto, i) => {
                           return (
                           <div class="card-deck col-4 col-xl-4 col-xl-3 border" key={i}>
-                          <img src={producto.img} class="card-img-top"/>
+                          <img src={producto.img} class="card-img-top imgSizeAutos"/>
                           <div class="col-12">
                               <div class="card-body">
                                   <h6 class="card-text text-center fuenteTextos">{producto.desc}</h6>

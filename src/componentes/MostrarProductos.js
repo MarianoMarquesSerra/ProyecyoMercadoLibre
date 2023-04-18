@@ -17,7 +17,7 @@ const MostrarProductos = ({productosVisitados,titulo}) => {
                       return (
                       <div class="col-6 col-xl-3 border" key={i}>
                         <div class="text-center ImageContainer">
-                          <NavLink to={`/vistaproducto/${producto.id}`}><img class="img-fluid" src={producto.img}/></NavLink>
+                          <NavLink to={`/vistaproducto/${producto.id}`}><img class="img-fluid imgSizeProd" src={producto.img}/></NavLink>
                         </div>
                         <div class="col-12 AlignEnd">
                           <div class="card-body">

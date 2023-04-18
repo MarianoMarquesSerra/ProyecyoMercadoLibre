@@ -725,7 +725,7 @@ li{
 
 .slider-container{
   width: 850px;
-  height: 200px;
+  height: 300px;
   margin-bottom: 60px;
 }
 
@@ -763,6 +763,14 @@ li{
   height: auto;
   max-width: 400px;
   max-height: 400px;
+}
+
+.imgSizeProd{
+  max-height: 200px;
+}
+
+.imgSizeAutos{
+  max-height: 270px;
 }
 
 .cardHeight{
@@ -813,6 +821,44 @@ li{
 
 .addShade:hover{
   box-shadow: 10px 5px 5px rgba(119, 116, 116, 0.219);
+}
+
+@media screen and (max-width: 460px){
+  .contenedorBoton{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 53px;
+    height: 40px;
+    float: left;
+  }
+  .BotonRedondo{
+      width: 49px;
+      height: 49px;
+  }
+  .TituloBoton{
+    position: relative;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .Icono{
+    position: relative;
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  .cantCarrito{
+    margin-left: 75%;
+  }
+  .iconArrow{
+    margin-left: 250px;
+  }
+  .sizeImage{
+    width: 300px;
+  }
+  .tamañoSlideFoto{
+    height: 120px;
+  }
 }
 
 @media screen and (min-width: 620px){
