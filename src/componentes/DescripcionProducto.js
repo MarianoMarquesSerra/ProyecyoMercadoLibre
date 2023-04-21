@@ -17,7 +17,7 @@ const DescripcionProducto = ({producto}) => {
     return ( 
         <>
             <div class="row bg-white">
-                <div class="col-6">
+                <div class="col-md-6 col-sm-12">
                     <div class="row">
                         <div class="col-2">
                             <div class="my-2" style={{width:'50px', height:'50px'}}><img class="ImgSmall" src={producto.imgsm1} id="smallImg1" onMouseEnter={() =>asignImage(producto.img)}/></div>
@@ -25,13 +25,13 @@ const DescripcionProducto = ({producto}) => {
                             <div class="my-2" style={{width:'50px', height:'50px'}}><img class="ImgSmall" src={producto.imgsm3} id="smallImg3" onMouseEnter={() =>asignImage(producto.img3)}/></div>
                         </div>
                         <div class="col-10">
-                            <div class="container my-4" style={{width:'400px', height:'600px'}}>
+                            <div class="container my-4 imgProducto">
                                 <img id="imageBox" class="ImgLarge" src={producto.img}/>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 p-3">
+                <div class="col-md-6 col-sm-12 p-3">
                     <div class="container">
                         <div class="row ">
                             <div class="col-10">

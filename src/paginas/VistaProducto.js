@@ -55,7 +55,7 @@ const VistaProducto = () => {
                 <Navbar/>
             </div>
             <div class="bg-page">
-            <div class="container">               
+            <div class="container hideItem">               
                 <div class="row mb-2">
                 <p class="pt-3" style={{fontSize:'15px'}}><span style={{fontWeight:'bold'}}>También puede interesarte: </span>guitarra eléctrica - prs sky</p>
                     <div class="col-8">

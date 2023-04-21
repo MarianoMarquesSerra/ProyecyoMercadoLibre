@@ -253,6 +253,10 @@ a:hover {
   padding: 10px;
 }
 
+.imgProducto{
+  width: 400px;
+  height: 600px;
+}
 
 .ColorGradiente{
   background: linear-gradient(45deg,rgb(170, 36, 170),rgb(14, 14, 48));
@@ -348,7 +352,7 @@ ul{
 }
 
 .colorMenu{
-  background-color: rgba(255, 230, 0, 0.616) !important;
+  background-color: rgba(255, 243, 70, 0.856) !important;
 }
 
 .BarraBusqueda{
@@ -858,6 +862,18 @@ li{
   }
   .tamañoSlideFoto{
     height: 120px;
+  }
+  .slider-container{
+    width: 320px;
+    height: 300px;
+    margin-bottom: 60px;
+  }
+  .hideItem{
+    display: none;
+  }
+  .imgProducto{
+    width: 300px;
+    height: 400px;
   }
 }
 
