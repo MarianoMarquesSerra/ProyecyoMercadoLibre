@@ -2,7 +2,6 @@ import { BiChevronRight } from "react-icons/bi";
 import { TbLetterI } from "react-icons/tb";
 import CarouselProddeInteres from "../componentes/CarouselProddeInteres";
 import DescripcionProducto from "../componentes/DescripcionProducto";
-import HeaderProducto from "../componentes/HeaderProducto";
 import Navbar from "../componentes/Navbar";
 import PreguntasyRespuestas from "../componentes/PreguntasyRespuestas";
 import ProductosSimilares from "../componentes/ProductosSimilares";
@@ -73,14 +72,7 @@ const VistaProducto = () => {
             </div>
 
             <div class="container bg-white">
-                <div class="row">
-                    <div class="col-8">
-                        <DescripcionProducto producto={prodselected}/>
-                    </div>
-                    <div class="col-4">
-                        <HeaderProducto producto={prodselected}/>
-                    </div>
-                </div>
+                    <DescripcionProducto producto={prodselected}/>
                 <hr></hr>
                 <div class="mt-5 mb-5">
                     <ProductosSimilares producto={prodselected}/>

@@ -29,7 +29,7 @@ const ListProductos = [
         detalles:["Fabricada en aliso/fresno con acabado de laca.","Con 6 cuerdas y 21 trastes.","El largo de escala es de 25.5 .","El puente es tremolo.","Incluye 3 micrófonos simples.","Controles de selector de micrófonos, tono y volumen.","Palanca incluida.","Sonidos fuertes y firmes con un estilo propio."],
         condicion:"Nuevo",
         cantvend:1,
-        precio:140310,
+        precio:1400310,
         cuotas:"6x 108.333 sin interés",
         vendedor:"CASALIBERTELLA",
         cantvendvendedor:1.461,

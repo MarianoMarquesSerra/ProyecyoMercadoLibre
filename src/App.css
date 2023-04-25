@@ -827,7 +827,7 @@ li{
   box-shadow: 10px 5px 5px rgba(119, 116, 116, 0.219);
 }
 
-@media screen and (max-width: 460px){
+@media screen and (max-width: 560px){
   .contenedorBoton{
     position: relative;
     display: flex;

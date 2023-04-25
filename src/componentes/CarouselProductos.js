@@ -14,9 +14,9 @@ const CarouselProductos = ({productos}) => {
                     if(i>=0 && i<=2){
                         return(
                         
-                               <div class="card p-0" style={{width:'13rem'}}>
+                               <div class="col-md-3 col-sm-4 card p-0">
                                  <div class="cardCarouselHeight border-bottom">
-                                   <img className='ImgCarousel' src={producto.img} alt="Card image cap"/>
+                                   <img className='img-fluid' src={producto.img} alt="Card image cap"/>
                                  </div>
                                  <div class="card-body">
                                    <h5 class="card-title">$ {producto.precio}</h5>
@@ -37,9 +37,9 @@ const CarouselProductos = ({productos}) => {
                     if(i>=3 && i<=5){
                         return(
                         
-                               <div class="card p-0" style={{width:'13rem'}}>
+                               <div class="col-md-3 col-sm-4 card p-0">
                                  <div class="cardCarouselHeight border-bottom">
-                                   <img className='ImgCarousel' src={producto.img} alt="Card image cap"/>
+                                   <img className='img-fluid' src={producto.img} alt="Card image cap"/>
                                  </div>
                                  <div class="card-body">
                                    <h5 class="card-title">$ {producto.precio}</h5>
@@ -60,9 +60,9 @@ const CarouselProductos = ({productos}) => {
                     if(i>=6 && i<=8){
                         return(
                         
-                               <div class="card p-0" style={{width:'13rem'}}>
+                               <div class="col-md-3 col-sm-4 card p-0">
                                  <div class="cardCarouselHeight border-bottom">
-                                   <img className='ImgCarousel' src={producto.img} alt="Card image cap"/>
+                                   <img className='img-fluid' src={producto.img} alt="Card image cap"/>
                                  </div>
                                  <div class="card-body">
                                    <h5 class="card-title">$ {producto.precio}</h5>
