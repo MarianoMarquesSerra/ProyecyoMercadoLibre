@@ -45,7 +45,7 @@ const ProductosSimilares = ({producto}) => {
 
   
     return ( 
-        <div class="container">
+        <div class="container hideItem">
             <h4>Compará con otros productos similares</h4>
             <div class="row mt-5 mb-4">
                 <div class="col-6 text-center border-bottom fw-bold hoverLink" id="ProdSimil" onClick={()=>toggleSwitch("ProdSimil")}>Productos Similares</div>

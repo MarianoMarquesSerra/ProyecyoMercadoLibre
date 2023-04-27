@@ -12,7 +12,7 @@ const PreguntasyRespuestas = ({preg,resp}) => {
             <h5>Preguntas y respuestas</h5>
             &nbsp;
             <h6>¿Qué querés saber?</h6>
-            <div className="col-6 mt-4">
+            <div className="mt-4">
                 <div className="row">
                     <div style={{width:'195px'}}>
                         <a className="text-primary fw-bold text-decoration-none fondoSky p-1" style={{fontSize:'14px',borderRadius:'5px'}}>Costo y tiempo de envío</a>
@@ -25,9 +25,9 @@ const PreguntasyRespuestas = ({preg,resp}) => {
                     </div>
                 </div>
             </div>
-            <div class="mt-4 mb-4 contBarra" style={{width:'715px', height:'50px'}}>
-                <div class="d-flex">
-                    <div id="inputBarra" style={{width:'850px', float:'left'}}>
+            <div class="mt-4 mb-4 contBarra">
+                <div class="row d-flex">
+                    <div class="sizeBarra" id="inputBarra" style={{float:'left'}}>
                         <input class="form-control" id="inputB" type="search" placeholder="Buscar productos, marcas y más..." aria-label="Search"/>
                     </div>
                     <div class="d-flex align-items-center justify-content-center bg-primary rounded-right" id="lupa" style={{width:'50px', height:'50px'}}>

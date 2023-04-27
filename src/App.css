@@ -132,13 +132,18 @@
   border: 2px solid rgb(0, 110, 255) !important;
 }
 
+.sizeBarra{
+  width: 815px;
+  height: 50px;
+}
+
 #lupa{
   display:block;
   position: absolute;
   z-index: 10;
   border-end-end-radius: 5px;
   border-top-right-radius: 5px;
-  left: 845px;
+  left: 805px;
 }
 
 #inputB{
@@ -777,6 +782,10 @@ li{
   max-height: 270px;
 }
 
+.cardSize{
+  width: 13rem;
+}
+
 .cardHeight{
   height: 280px;
   margin: 0;
@@ -827,7 +836,7 @@ li{
   box-shadow: 10px 5px 5px rgba(119, 116, 116, 0.219);
 }
 
-@media screen and (max-width: 560px){
+@media screen and (max-width: 590px){
   .contenedorBoton{
     position: relative;
     display: flex;
@@ -874,6 +883,31 @@ li{
   .imgProducto{
     width: 300px;
     height: 400px;
+  }
+  .sizeBarra{
+    width: 400px;
+    height: 50px;
+  }
+  #lupa{
+    display:block;
+    position: absolute;
+    z-index: 10;
+    border-end-end-radius: 5px;
+    border-top-right-radius: 5px;
+    left: 315px;
+  }
+
+  .cardSize{
+    width: 10rem;
+    margin-bottom: 10px;
+  }
+
+  .ImgCarousel{
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+    cursor: pointer;
   }
 }
 

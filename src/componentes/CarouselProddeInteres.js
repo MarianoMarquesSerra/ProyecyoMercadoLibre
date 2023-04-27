@@ -13,7 +13,7 @@ const CarouselProddeInteres = ({productos}) => {
                     if(i>=0 && i<=4){
                         return(
                         
-                               <div class="card p-0" style={{width:'13rem'}} key={i}>
+                               <div class="card p-0 cardSize" key={i}>
                                  <div class="cardCarouselHeight border-bottom">
                                    <img className='ImgCarousel' src={producto.img} alt="Card image cap"/>
                                  </div>
@@ -36,7 +36,7 @@ const CarouselProddeInteres = ({productos}) => {
                     if(i>=5 && i<=9){
                         return(
                         
-                               <div class="card p-0" style={{width:'13rem'}} key={i}>
+                               <div class="card p-0 cardSize" key={i}>
                                  <div class="cardCarouselHeight border-bottom">
                                    <img className='ImgCarousel' src={producto.img} alt="Card image cap"/>
                                  </div>
@@ -59,7 +59,7 @@ const CarouselProddeInteres = ({productos}) => {
                     if(i>=10 && i<=14){
                         return(
                         
-                               <div class="card p-0" style={{width:'13rem'}} key={i}>
+                               <div class="card p-0 cardSize" key={i}>
                                  <div class="cardCarouselHeight border-bottom">
                                    <img className='ImgCarousel' src={producto.img} alt="Card image cap"/>
                                  </div>
@@ -82,7 +82,7 @@ const CarouselProddeInteres = ({productos}) => {
                     if(i>=15 && i<=19){
                         return(
                         
-                               <div class="card p-0" style={{width:'13rem'}} key={i}>
+                               <div class="card p-0 cardSize" key={i}>
                                  <div class="cardCarouselHeight border-bottom">
                                    <img className='ImgCarousel' src={producto.img} alt="Card image cap"/>
                                  </div>
