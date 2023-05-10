@@ -14,6 +14,7 @@ import { useEffect, useState } from "react";
 
 
 
+
 const VistaProducto = () => {
     const {id} = useParams();
     let [prodselected,setProdselected] = useState({});

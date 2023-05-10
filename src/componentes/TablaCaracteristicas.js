@@ -1,7 +1,7 @@
 const TablaCaracteristicas = ({tabla}) => {
     return ( 
         <>
-            <table class="tableStyle">
+            <table class="container">
               {
                 tabla?.map((item,i)=>{
                   if((i+1)%2 != 0){
