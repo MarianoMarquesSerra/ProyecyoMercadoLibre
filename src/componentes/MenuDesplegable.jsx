@@ -30,7 +30,7 @@ const MenuDesplegable = (props) => {
     function agregarClase(valor) {
       var Opciones = document.getElementById(props.idOpciones);
       var Contenedor = document.getElementById(props.idMenu);
-      var Icono = document.getElementById(props.idIcono);
+      var Icono = document.getElementById(props.idIconoFlecha);
       
       console.log(valor);
       if(valor){
@@ -56,7 +56,7 @@ const MenuDesplegable = (props) => {
    
     return ( 
         <>
-            <div class="MenuDesplegable" id="MenuDesplegable" onClick={() => agregarClase(!valor)}>{titulo} <AiOutlineDown class="iconArrow" id={props.idIcono}/></div>
+            <div class="MenuDesplegable" id="MenuDesplegable" onClick={() => agregarClase(!valor)}>{titulo} <AiOutlineDown class="iconArrow" id={props.idIconoFlecha}/></div>
             <div class="contenedorOpciones"  id={props.idMenu} onClick={() => agregarClase(!valor)}>
               <MenuOpciones listado={props.lista} opciones={props.idOpciones}/>
             </div>

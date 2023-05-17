@@ -27,9 +27,9 @@ const Vehiculos = () => {
                           </div>
 
                               <div class="container-fluid contenedorBuscar">
-                                <MenuDesplegable lista={["Motos", "Náutica", "Otros Vehículos", "Camiones", "Autos de Colección", "Maquinaria Vial", "Maquinaria Agrícola"]} titulo={"Autos y Camionetas"} idMenu="Menu1" idIcono="Icono1" idOpciones="Opciones1"/>
-                                <MenuDesplegable lista={["Volkswagen", "Ford", "Fiat", "Chevrolet", "Peugeot", "Renault", "Toyota", "Honda", "Citroen", "Mecedes-Benz"]} titulo={"Todas las marcas"} idMenu="Menu2" idIcono="Icono2" idOpciones="Opciones2"/>
-                                <MenuDesplegable lista={["Gol", "Fiesta", "500", "Corsa", "207", "Kangoo", "Hilux", "Civic", "C3", "Sprinter"]} titulo={"Modelo"} idMenu="Menu3" idIcono="Icono3" idOpciones="Opciones3"/>
+                                <MenuDesplegable lista={["Motos", "Náutica", "Otros Vehículos", "Camiones", "Autos de Colección", "Maquinaria Vial", "Maquinaria Agrícola"]} titulo={"Autos y Camionetas"} idMenu="Menu1" idIconoFlecha="IconoFlecha1" idOpciones="Opciones1"/>
+                                <MenuDesplegable lista={["Volkswagen", "Ford", "Fiat", "Chevrolet", "Peugeot", "Renault", "Toyota", "Honda", "Citroen", "Mecedes-Benz"]} titulo={"Todas las marcas"} idMenu="Menu2" idIconoFlecha="IconoFlecha2" idOpciones="Opciones2"/>
+                                <MenuDesplegable lista={["Gol", "Fiesta", "500", "Corsa", "207", "Kangoo", "Hilux", "Civic", "C3", "Sprinter"]} titulo={"Modelo"} idMenu="Menu3" idIconoFlecha="IconoFlecha3" idOpciones="Opciones3"/>
                                 <Switch/>
                                 <button className="BotonBuscar">Buscar</button>
                               </div>

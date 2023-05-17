@@ -942,7 +942,7 @@ li{
     margin-left: 75%;
   }
   .iconArrow{
-    margin-left: 250px;
+    margin-right: 10px;
   }
 }
 
@@ -974,7 +974,7 @@ li{
     margin-left: 77%;
   }
   .iconArrow{
-    margin-left: 300px;
+    margin-right: 10px;
   }
   .CarrouselPosicion{
     position: relative;
@@ -1030,7 +1030,7 @@ li{
     margin-left: 79.5%;
   }
   .iconArrow{
-    margin-left: 650px;
+    margin-right: 10px;
   }
 
   .contSlide{
