@@ -24,12 +24,12 @@ const VistaProducto = () => {
 
 
     useEffect(()=>{
-        productos.map((producto)=>{
-            if(producto.id == id){
-                setProdselected(producto);
-            }
-        });
-        cargarPreguntas();
+            productos.map((producto)=>{
+                if(producto.id == id){
+                    setProdselected(producto);
+                }
+            });
+            cargarPreguntas();
     },[]);
 
 

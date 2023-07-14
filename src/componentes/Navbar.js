@@ -58,7 +58,7 @@ const Navbar = () => {
             <div class="container-fluid colorMenu">                
                   <div class="row">
                       <div class="col-2 d-flex justify-content-center">
-                        <a><img src={require('../images/LogoMercadoLibre.jpg')}/></a>
+                        <NavLink to="/"><a><img src={require('../images/LogoMercadoLibre.jpg')}/></a></NavLink>
                       </div>
                       <div class="col-6">
                         <div class="BarraBusqueda m-2">
@@ -120,9 +120,9 @@ const Navbar = () => {
             
             <div class="menuCategorias" onMouseOver={() => {mostrarMenu(true,"menuCategorias")}} onMouseLeave={() => {mostrarMenu(false,"menuCategorias")}}>            
                 <ul>
-                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Vehículos</a></li>
+                  <li><NavLink href="" style={{textDecoration: 'none', color: 'white'}} to="/vehiculos">Vehículos</NavLink></li>
                   <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Inmuebles</a></li>
-                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Supermercados</a></li>
+                  <li><NavLink href="" style={{textDecoration: 'none', color: 'white'}}  to="/super">Supermercados</NavLink></li>
                   <li onMouseOver={() => {mostrarMenu(true,"menuTecnología")}} onMouseLeave={() => {mostrarMenu(false,"menuTecnología")}}><a href="" style={{textDecoration: 'none', color: 'white'}}><div class="ContenedorFloat">Tecnología</div><div class="ItemFlecha"><BiChevronRight/></div></a></li>
                   <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Hogar y Muebles</a></li>
                   <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Elesctrodomésticos</a></li>
@@ -130,7 +130,7 @@ const Navbar = () => {
                   <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Construcción</a></li>
                   <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Deportes y Fitness</a></li>
                   <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Accesorios para Vehículos</a></li>
-                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Moda</a></li>
+                  <li><NavLink href="" style={{textDecoration: 'none', color: 'white'}} to="/moda">Moda</NavLink></li>
                   <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Juegos y Juguetes</a></li>
                   <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Bebés</a></li>
                   <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Belleza y Cuidado Personal</a></li>
@@ -141,7 +141,7 @@ const Navbar = () => {
                   <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Servicios</a></li>
                   <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Más Vendidos</a></li>
                   <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Tiendas Oficiales</a></li>
-                  <li><a href="" style={{textDecoration: 'none', color: 'white'}}>Ver más categorías</a></li>
+                  <li><NavLink href="" style={{textDecoration: 'none', color: 'white'}} to="/vermas">Ver más categorías</NavLink></li>
                 </ul>
             </div>
             <div class="menuTecnología" id="menuTecnología" onMouseOver={() => {mostrarMenu(true,"menuTecnología");mostrarMenu(true,"menuCategorias");}} onMouseLeave={() => {mostrarMenu(false,"menuTecnología");mostrarMenu(false,"menuCategorias");}}>

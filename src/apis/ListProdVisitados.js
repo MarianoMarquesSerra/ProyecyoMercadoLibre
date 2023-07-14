@@ -178,6 +178,54 @@ const ListProdVisitados = [
         conWiFi: "Sí",
         conHDMI: "Sí",
         subModelo: "-" 
+    },
+    {
+        id:13,
+        img:require('../images/CortadoraPastoEinhell.jpg'),
+        desc:"Maquina Cortar Pasto Einhell",
+        precio: 662.057,
+        categoria:"Podadora",
+        modelo:"Stratocaster",
+        orientacion:"Diestro",
+        color:"Olympic white",
+        cuerpo:"Aliso",
+        diapason:"Arce",
+        acabado:"Uretano brillante",
+        moddet:"-",
+        origen:"Mexico",
+        cantidad:1
+    },
+    {
+        id:14,
+        img:require('../images/CortadoraPastoOmaha.jpg'),
+        desc:"Maquina Cortar Pasto Omaha",
+        precio: 574.999,
+        categoria:"Podadora",
+        modelo:"Les Paul",
+        orientacion:"Diestro",
+        color:"Smokehouse burst",
+        cuerpo:"Arce/Caoba",
+        diapason:"Palo de rosa",
+        acabado:"Brillante",
+        moddet:"LPST00KHCH1",
+        origen:"-",
+        cantidad:2
+    },
+    {
+        id:15,
+        img:require('../images/CortadoraPastoGamma.jpg'),
+        desc:"Maquina Cortar Pasto Gamma",
+        precio: 1.532475,
+        categoria:"Podadora",
+        modelo:"Les Paul",
+        orientacion:"Diestro",
+        color:"Cobalt burst",
+        cuerpo:"Arce/Caoba",
+        diapason:"Palo de rosa",
+        acabado:"Brillante",
+        moddet:"-",
+        origen:"Mexico",
+        cantidad:0
     }
 ]
 

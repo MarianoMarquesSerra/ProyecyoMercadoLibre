@@ -14,20 +14,22 @@ const MostrarProductos = ({productosVisitados,titulo}) => {
                   </div>
                   <div class="row col-12">
                     {productosVisitados.map((producto, i) => {
-                      return (
-                      <div class="col-6 col-xl-3 border" key={i}>
-                        <div class="text-center ImageContainer">
+                      if(i<4){
+                        return (
+                        <div class="col-6 col-xl-3 border" key={i}>
+                          <div class="text-center ImageContainer">
                           <NavLink to={`/vistaproducto/${producto.id}`}><img class="img-fluid imgSizeProd" src={producto.img}/></NavLink>
-                        </div>
-                        <div class="col-12 AlignEnd">
-                          <div class="card-body">
-                              <p class="card-text">{producto.desc}</p>
-                              <p><b>$ {producto.precio}</b></p>
-                              <p class="text-success">{producto.cuotas}</p>
+                          </div>
+                          <div class="col-12 AlignEnd">
+                            <div class="card-body">
+                                <p class="card-text">{producto.desc}</p>
+                                <p><b>$ {producto.precio}</b></p>
+                                <p class="text-success">{producto.cuotas}</p>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      )
+                        )
+                      }
                     })}
                     
                   </div>
