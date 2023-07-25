@@ -95,7 +95,9 @@ const VistaProducto = () => {
                 ProddeInteres.push(prod);
             }
             })}
-            <CarouselProddeInteres productos={ProddeInteres}/>
+            <div className="mostrarCarousel">
+                <CarouselProddeInteres  productos={ProddeInteres}/>
+            </div>
             </div>
             <div className="container mt-5 mb-5">
                 <img src={require('../images/BanerSamsung.jpg')} style={{width:'100%', borderRadius:'5px'}}/>

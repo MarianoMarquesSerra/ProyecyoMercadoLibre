@@ -307,6 +307,10 @@ ul{
   display: block;
 }
 
+.mostrarCarousel{
+  display: block;
+}
+
 .hoverLink:hover {
   color: rgb(61, 80, 248);
 }
@@ -918,6 +922,10 @@ li{
     height: auto;
     max-width: 300px;
     max-height: 300px;
+  }
+
+  .mostrarCarousel{
+    display: none;
   }
 }
 
